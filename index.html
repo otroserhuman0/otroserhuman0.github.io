@@ -500,7 +500,75 @@
     transform: translateX(-50%); /* Compensa el desplazamiento para centrarla */
 }
         }
+        .glosario-content {
+    max-width: 100%;
+    padding: 20px;
+}
 
+.glosario-item {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.glosario-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.glosario-item h3 {
+    color: #2c3e50;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--turquesa);
+    padding-bottom: 5px;
+}
+
+.specialty-block {
+    margin-top: 15px;
+    padding-left: 20px;
+    border-left: 4px solid var(--esmeralda);
+}
+
+.specialty-block h4 {
+    color: #2980b9;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.specialty-block p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.specialty-block ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.specialty-block ul li {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.specialty-block ul li:before {
+    content: "✔";
+    color: var(--verde-natural);
+    position: absolute;
+    left: -20px;
+    font-size: 1.2em;
+}
+
+.specialty-block ul li strong {
+    color: #16a085;
+}
         ul {
             list-style: none;
             padding-left: 20px;
@@ -834,7 +902,7 @@
                 <p><i class="fas fa-leaf"></i>Aleria le ofrece una solución única: suplementos diseñados con precisión científica para optimizar los mecanismos regenerativos, metabólicos y de equilibrio del cuerpo, usando dosis exactas que maximizan absorción y potencian la efectividad de sus prescripciones, llevando sus tratamientos a un nivel superior.</p>
                 <p><strong>¿Listo para que sus pacientes cumplan más y sus resultados hablen por usted?</strong></p>
                 <div class="button-with-icons">
-                    <a href="https://wa.me/?text=Hola,%20soy%20profesional%20de%20la%20salud%20y%20me%20interesa%20Aleria" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>
+                    <a href="https://wa.me/523316069351?text=Me%20llegó%20la%20publicidad%20para%20profesionales%20de%20la%20salud,%20tengo%20una%20pregunta" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>
                     <div class="social-links">
                         <a href="https://www.facebook.com/Aleria.mx/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://www.instagram.com/aleriamx/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -866,8 +934,7 @@
                 <p>Si ya trabaja con otras marcas de suplementos, Aleria le invita a conocer el efecto de la precisión en cuanto a cantidades y combinaciones de nutrientes para acelerar la respuesta del paciente y reducir su inversión en distintos productos.</p>
                 <p>Con Aleria, usted lidera el cambio hacia una salud integral eficiente y accesible, haciendo que sus tratamientos brillen y su consultorio crezca.</p>
                 <div class="button-with-icons">
-                    <a href="https://wa.me/?text=Hola,%20soy%20profesional%20de%20la%20salud%20y%20me%20interesa%20Aleria" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>
-                    <div class="social-links">
+                    <a href="https://wa.me/523316069351?text=Me%20llegó%20la%20publicidad%20para%20profesionales%20de%20la%20salud,%20tengo%20una%20pregunta" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>                    <div class="social-links">
                         <a href="https://www.facebook.com/Aleria.mx/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://www.instagram.com/aleriamx/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
@@ -929,13 +996,13 @@
         <p>En el ámbito metabólico, Aleria marca la diferencia al ofrecer combinaciones que potencian los procesos energéticos sin abrumar al organismo. A diferencia de enfoques que sobrecargan con cantidades excesivas, Aleria equilibra sus nutrientes para optimizar la absorción y utilización de energía, apoyando al cuerpo en su capacidad de regularse a sí mismo. Este enfoque respeta los límites del metabolismo, estimulando su eficiencia con la menor intervención posible, lo que permite a los pacientes recuperar vitalidad de forma natural, en contraste con soluciones que buscan imponer resultados forzados. Es una respuesta directa a las demandas del estilo de vida moderno, donde el desgaste metabólico requiere apoyo sutil pero efectivo.</p>
         <p>La homeostasis, ese equilibrio esencial para la salud, es otro pilar donde Aleria sobresale. Mientras otras marcas pueden desestabilizar al organismo con dosis desmedidas, Aleria utiliza cantidades cuidadosamente calibradas para fortalecer los sistemas que mantienen la armonía interna. Este enfoque estimula la respuesta natural del cuerpo frente al estrés oxidativo y la inflamación, promoviendo un estado de estabilidad sin recurrir a la saturación típica de la medicina alopática, cuyo objetivo suele ser suprimir síntomas en lugar de activar procesos. Con Aleria, el cuerpo encuentra su propio camino hacia el equilibrio, apoyado por nutrientes que trabajan en sinergia para maximizar su capacidad homeostática.</p>
         <p>Asociarse con Aleria es elegir una marca que entiende que menos puede ser más. Su filosofía se basa en la ciencia de la precisión: combinar nutrientes en dosis justas para maximizar la absorción y estimular los procesos naturales del cuerpo, en lugar de abrumarlo con excesos. Esto no solo mejora el apego al tratamiento al ofrecer resultados auténticos y sostenibles que los pacientes valoran, sino que también posiciona al médico como un líder en soluciones inteligentes y efectivas. Además, el modelo de colaboración de Aleria —con descuentos para pacientes y comisiones para profesionales— añade un beneficio económico tangible, permitiendo al médico crecer profesionalmente mientras sus pacientes prosperan con un enfoque que respeta y potencia su biología. Es una alianza que redefine el cuidado, priorizando el estímulo natural sobre la intervención forzada, con calidad certificada y resultados que hablan por sí mismos.</p>
-        <a href="https://wa.me/?text=Hola,%20soy%20profesional%20de%20la%20salud%20y%20me%20interesa%20Aleria" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>
-        <img src="https://i.ibb.co/PGR8nSND/Banner-oxidim.png" alt="Oxidim" class="final-image" loading="lazy">
+        <a href="https://wa.me/523316069351?text=Me%20llegó%20la%20publicidad%20para%20profesionales%20de%20la%20salud,%20tengo%20una%20pregunta" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>        <img src="https://i.ibb.co/PGR8nSND/Banner-oxidim.png" alt="Oxidim" class="final-image" loading="lazy">
     </section>
 
     <section id="glosario">
         <h2>Glosario Médico para Suplementación</h2>
         <div class="glosario-content" aria-live="polite">
+            <!-- Términos básicos -->
             <div class="glosario-item">
                 <h3>Estrés Oxidativo</h3>
                 <p>Desgaste metabólico causado por radicales libres...</p>
@@ -944,10 +1011,921 @@
                 <h3>Inflamación</h3>
                 <p>Respuesta del cuerpo a agresiones...</p>
             </div>
+            <!-- Combinación 1 -->
+            <div class="glosario-item">
+                <h3>Sugerencia de Nutrientes 1: Combinación Antioxidante y Regenerativa (25 Nutrientes en una Toma)</h3>
+                <p><strong>Ingredientes:</strong> Glicinato de magnesio (80 mg), omega-3 de krill (300 mg), vitamina B12 (424 µg), hierro bisglicinato (19 mg), glutatión (29 mg), vitamina C (200 mg), zinc bisglicinato (10 mg), colágeno hidrolizado (4 g), selenio (40 µg), silicio (66.5 mg), calcio de coral (79 mg), vitamina B2 (10 mg), vitamina B6 (10 mg), inulina de agave (800 mg), nopal liofilizado (624 mg), noni (285 mg), acai (136 mg), mangostán (136 mg), shiitake (203 mg), astaxantina (dosis del krill), goma guar (48.7 mg), liofilizado de piña (1.47 g), coco (1.47 g), semilla de uva (70 mg), granada (20 mg).</p>
+                <!-- Aquí van todos los specialty-block de Combinación 1 que ya tienes -->
+                <!-- Copia y pega los <div class="specialty-block"> desde tu código original -->
+            </div>
+            <!-- Combinación 2 -->
+            <div class="glosario-item">
+                <h3>Sugerencia de Nutrientes 2: Combinación Antioxidante Reforzada (6 Nutrientes en una Toma)</h3>
+                <p><strong>Ingredientes:</strong> Vitamina C (300 mg), extracto de semilla de uva (70 mg), extracto de acai (70 mg), granada liofilizada (20 mg), fresa liofilizada (20 mg), kiwi liofilizado (20 mg).</p>
+                <!-- Aquí van todos los specialty-block de Combinación 2 que ya tienes -->
+            </div>
+            <!-- Combinación 3 -->
+            <div class="glosario-item">
+                <h3>Sugerencia de Nutrientes 3: Combinación Neuromuscular y Ósea (5 Nutrientes en una Toma)</h3>
+                <p><strong>Ingredientes:</strong> Magnesio (L-treonato y glicinato, 500 mg), calcio de coral japonés (600 mg), vitamina C (300 mg), raíz de cúrcuma (230 mg), bioperina (20 mg).</p>
+                <!-- Aquí van todos los specialty-block de Combinación 3 que ya tienes -->
+            </div>
+            <!-- Combinación 4 -->
+            <div class="glosario-item">
+                <h3>Sugerencia de Nutrientes 4: Combinación de Colágeno y Regeneración Tisular (7 Nutrientes en Polvo)</h3>
+                <p><strong>Ingredientes:</strong> Colágeno hidrolizado (5 g), vitamina C (300 mg), inulina de agave (1.75 g), ácido hialurónico (200 µg), liofilizado de piña (1.47 g), liofilizado de coco (1.47 g), biotina (200 µg).</p>
+                <!-- Aquí van todos los specialty-block de Combinación 4 que ya tienes -->
+            </div>
             <p class="no-results">No se encontraron resultados.</p>
         </div>
     </section>
-
+        <!-- Combinación 1 -->
+        <div class="glosario-item">
+            <h3>Sugerencia de Nutrientes 1: Combinación Antioxidante y Regenerativa (25 Nutrientes en una Toma)</h3>
+            <p><strong>Ingredientes:</strong> Glicinato de magnesio (80 mg), omega-3 de krill (300 mg), vitamina B12 (424 µg), hierro bisglicinato (19 mg), glutatión (29 mg), vitamina C (200 mg), zinc bisglicinato (10 mg), colágeno hidrolizado (4 g), selenio (40 µg), silicio (66.5 mg), calcio de coral (79 mg), vitamina B2 (10 mg), vitamina B6 (10 mg), inulina de agave (800 mg), nopal liofilizado (624 mg), noni (285 mg), acai (136 mg), mangostán (136 mg), shiitake (203 mg), astaxantina (dosis del krill), goma guar (48.7 mg), liofilizado de piña (1.47 g), coco (1.47 g), semilla de uva (70 mg), granada (20 mg).</p>
+            <div class="specialty-block">
+                <h4>Cardiología</h4>
+                <p><strong>Pacientes:</strong> Hipertensos, con riesgo de infarto o dislipidémicos.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Reduce triglicéridos y LDL oxidado al inhibir síntesis de VLDL, mejorando perfil lipídico. [Bhatt DL, et al. Reduction of cardiovascular events with icosapent ethyl—Intervention Trial. N Engl J Med. 2019]</li>
+                    <li><strong>Magnesio (80 mg):</strong> Relaja vasos sanguíneos, disminuyendo presión arterial. [Rosanoff A, et al. Magnesium and cardiovascular disease. Adv Nutr. 2016]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Protege endotelio vascular del estrés oxidativo. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Selenio (40 µg):</strong> Previene aterosclerosis al neutralizar radicales libres. [Rayman MP. Lancet. 2012]</li>
+                    <li><strong>Calcio de coral (79 mg):</strong> Estabiliza contracción cardíaca sin sobrecarga. [Weaver CM, et al. Calcium bioavailability and health effects. Adv Nutr. 2014]</li>
+                    <li><strong>Glutatión (29 mg):</strong> Protege miocardio del estrés oxidativo post-isquemia. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Noni (285 mg), acai (136 mg), mangostán (136 mg):</strong> Combaten estrés oxidativo cardiovascular con polifenoles. [Schauss AG, et al. Plant Foods Hum Nutr. 2010; de Moura RS, et al. J Agric Food Chem. 2012; Chen LG, et al. Food Chem Toxicol. 2011]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Traumatólogo</h4>
+                <p><strong>Pacientes:</strong> Post-cirugía, fracturas o dolor articular.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Colágeno hidrolizado (4 g):</strong> Estimula síntesis de colágeno tipo I y II, acelerando reparación tisular. [León-López A, et al. Molecules. 2019]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Potencia síntesis de colágeno como cofactor en hidroxilación de prolina. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Magnesio (80 mg):</strong> Reduce espasmos musculares al regular calcio-magnesio. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                    <li><strong>Zinc bisglicinato (10 mg):</strong> Promueve regeneración celular en tejidos dañados. [Lin PH, et al. Zinc in wound healing modulation. Nutrients. 2018]</li>
+                    <li><strong>Silicio (66.5 mg):</strong> Refuerza mineralización ósea para recuperación estructural. [Price CT, et al. Silicon and bone health. J Bone Miner Metab. 2013]</li>
+                    <li><strong>Astaxantina:</strong> Reduce inflamación articular por estrés oxidativo. [Park JS, et al. Anti-inflammatory effects of astaxanthin. Nutr Metab (Lond). 2010]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Oftalmología</h4>
+                <p><strong>Pacientes:</strong> Degeneración macular, glaucoma o fatiga visual.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Astaxantina:</strong> Protege fotorreceptores de estrés oxidativo retiniano. [Park JS, et al. Nutr Metab (Lond). 2010]</li>
+                    <li><strong>Glutatión (29 mg):</strong> Neutraliza radicales libres en retina, retrasando daño oxidativo. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Zinc bisglicinato (10 mg):</strong> Mantiene niveles en mácula, apoyando visión nocturna. [Age-Related Eye Disease Study 2 Research Group. Lutein + zeaxanthin and omega-3 fatty acids for age-related macular degeneration. JAMA. 2013]</li>
+                    <li><strong>Vitaminas B2 (10 mg), B6 (10 mg), B12 (424 µg):</strong> Mejoran transmisión nerviosa en nervio óptico. [Pinazo-Durán MD, et al. B vitamins and eye health. Nutrients. 2016]</li>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Hidrata superficie ocular, mejorando lágrimas. [Dry Eye Assessment and Management Study Research Group. n-3 Fatty acid supplementation for the treatment of dry eye disease. N Engl J Med. 2018]</li>
+                    <li><strong>Acai (136 mg):</strong> Fortalece microcirculación retinal con antocianinas. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Pediatría</h4>
+                <p><strong>Pacientes:</strong> Niños en crecimiento, inmunidad baja o anemia.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Colágeno hidrolizado (4 g):</strong> Fortalece tejidos en desarrollo (piel, huesos). [León-López A, et al. Molecules. 2019]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Apoya síntesis de colágeno y defensas inmunes. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Hierro bisglicinato (19 mg):</strong> Previene anemia, mejorando oxigenación. [Camaschella C. N Engl J Med. 2015]</li>
+                    <li><strong>Vitamina B12 (424 µg):</strong> Mejora energía en crecimiento activo. [O'Leary F, et al. Nutrients. 2012]</li>
+                    <li><strong>Inulina (800 mg), nopal (624 mg):</strong> Nutren microbiota, optimizando absorción de nutrientes. [Vandeputte D, et al. Inulin improves gut microbiota composition. Gut. 2017]</li>
+                    <li><strong>Noni (285 mg):</strong> Combate estrés oxidativo con antioxidantes exóticos. [Schauss AG, et al. Plant Foods Hum Nutr. 2010]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Ginecología</h4>
+                <p><strong>Pacientes:</strong> Menopausia, posparto o fatiga hormonal.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Magnesio (80 mg):</strong> Alivia calambres y fatiga hormonal regulando serotonina. [Fathizadeh N, et al. Magnesium supplementation and premenstrual syndrome. J Caring Sci. 2010]</li>
+                    <li><strong>Vitaminas B2 (10 mg), B6 (10 mg), B12 (424 µg):</strong> Mejoran ánimo y energía. [Pinazo-Durán MD, et al. Nutrients. 2016]</li>
+                    <li><strong>Colágeno hidrolizado (4 g):</strong> Mejora elasticidad cutánea por cambios hormonales. [León-López A, et al. Molecules. 2019]</li>
+                    <li><strong>Hierro bisglicinato (19 mg):</strong> Repone pérdidas por menstruación o parto. [Camaschella C. N Engl J Med. 2015]</li>
+                    <li><strong>Noni (285 mg), acai (136 mg), mangostán (136 mg):</strong> Combaten daño oxidativo hormonal. [Schauss AG, et al. Plant Foods Hum Nutr. 2010; de Moura RS, et al. J Agric Food Chem. 2012; Chen LG, et al. Food Chem Toxicol. 2011]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Dermatólogo</h4>
+                <p><strong>Pacientes:</strong> Acné, piel seca o envejecimiento prematuro.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Colágeno hidrolizado (4 g):</strong> Mejora hidratación y elasticidad cutánea. [León-López A, et al. Molecules. 2019]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Estimula colágeno y protege contra daño UV. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Reduce inflamación en acné modulando prostaglandinas. [Calder PC. Biochem Soc Trans. 2017]</li>
+                    <li><strong>Glutatión (29 mg):</strong> Protege contra daño oxidativo de UV o contaminación. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Shiitake (203 mg):</strong> Combate estrés oxidativo con polisacáridos antioxidantes. [Wang L, et al. Shiitake mushroom polysaccharides and health. Int J Biol Macromol. 2017]</li>
+                    <li><strong>Zinc bisglicinato (10 mg):</strong> Regula sebo, controlando brotes. [Lin PH, et al. Nutrients. 2018]</li>
+                    <li><strong>Noni (285 mg), acai (136 mg), mangostán (136 mg):</strong> Reducen estrés oxidativo cutáneo. [Schauss AG, et al. Plant Foods Hum Nutr. 2010; de Moura RS, et al. J Agric Food Chem. 2012; Chen LG, et al. Food Chem Toxicol. 2011]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Infectología</h4>
+                <p><strong>Pacientes:</strong> Infecciones recurrentes, VIH, hepatitis o recuperación post-viral.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (200 mg):</strong> Estimula linfocitos e interferones, fortaleciendo inmunidad. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Zinc bisglicinato (10 mg):</strong> Potencia neutrófilos y macrófagos en infecciones crónicas. [Lin PH, et al. Nutrients. 2018]</li>
+                    <li><strong>Selenio (40 µg):</strong> Protege células inmunes del estrés oxidativo. [Rayman MP. Lancet. 2012]</li>
+                    <li><strong>Glutatión (29 mg):</strong> Reduce daño oxidativo post-infeccioso en hígado y tejidos. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Shiitake (203 mg):</strong> Activa macrófagos con polisacáridos, mejorando respuesta inmune. [Wang L, et al. Int J Biol Macromol. 2017]</li>
+                    <li><strong>Noni (285 mg):</strong> Neutraliza toxinas, apoyando recuperación hepática. [Schauss AG, et al. Plant Foods Hum Nutr. 2010]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Medicina Familiar</h4>
+                <p><strong>Pacientes:</strong> Adultos con fatiga, niños con dieta pobre, ancianos con prevención general.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Magnesio (80 mg):</strong> Mejora energía y reduce fatiga regulando metabolismo. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                    <li><strong>Vitamina B12 (424 µg):</strong> Optimiza oxigenación en fatiga general. [O'Leary F, et al. Nutrients. 2012]</li>
+                    <li><strong>Hierro bisglicinato (19 mg):</strong> Combate anemia por dietas deficientes. [Camaschella C. N Engl J Med. 2015]</li>
+                    <li><strong>Colágeno hidrolizado (4 g):</strong> Fortalece articulaciones y piel. [León-López A, et al. Molecules. 2019]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Refuerza defensas y combate estrés oxidativo. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Inulina (800 mg), nopal (624 mg):</strong> Apoyan digestión y absorción de nutrientes. [Vandeputte D, et al. Gut. 2017]</li>
+                    <li><strong>Noni (285 mg), acai (136 mg), mangostán (136 mg):</strong> Reducen estrés oxidativo diario. [Schauss AG, et al. Plant Foods Hum Nutr. 2010; de Moura RS, et al. J Agric Food Chem. 2012; Chen LG, et al. Food Chem Toxicol. 2011]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Neumología</h4>
+                <p><strong>Pacientes:</strong> Asma, EPOC, fibrosis pulmonar.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Reduce inflamación bronquial inhibiendo leucotrienos. [Calder PC. Biochem Soc Trans. 2017]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Protege tejido pulmonar del estrés oxidativo. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Glutatión (29 mg):</strong> Neutraliza radicales libres en pulmones, reduciendo daño oxidativo. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Magnesio (80 mg):</strong> Relaja músculos bronquiales, facilitando respiración. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                    <li><strong>Acai (136 mg), mangostán (136 mg):</strong> Combaten estrés oxidativo pulmonar con antocianinas y xantonas. [de Moura RS, et al. J Agric Food Chem. 2012; Chen LG, et al. Food Chem Toxicol. 2011]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Neurólogo</h4>
+                <p><strong>Pacientes:</strong> Migrañas, neuropatía periférica, deterioro cognitivo.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Magnesio (80 mg):</strong> Reduce hiperexcitabilidad neuronal, aliviando migrañas. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                    <li><strong>Vitaminas B2 (10 mg), B6 (10 mg), B12 (424 µg):</strong> Apoyan mielinización y transmisión nerviosa. [Pinazo-Durán MD, et al. Nutrients. 2016]</li>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Protege neuronas del daño oxidativo, mejorando memoria. [Yurko-Mauro K, et al. Alzheimers Dement. 2010]</li>
+                    <li><strong>Glutatión (29 mg):</strong> Combate estrés oxidativo neuronal. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Noni (285 mg):</strong> Reduce inflamación cerebral con antioxidantes. [Schauss AG, et al. Plant Foods Hum Nutr. 2010]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Reumatólogo</h4>
+                <p><strong>Pacientes:</strong> Artritis reumatoide, lupus, gota.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Reduce citoquinas proinflamatorias (IL-6, TNF-α), aliviando inflamación articular. [Calder PC. Biochem Soc Trans. 2017]</li>
+                    <li><strong>Colágeno hidrolizado (4 g):</strong> Fortalece cartílago y tejidos conectivos. [León-López A, et al. Molecules. 2019]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Apoya síntesis de colágeno en articulaciones. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Magnesio (80 mg):</strong> Alivia rigidez muscular. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                    <li><strong>Selenio (40 µg):</strong> Reduce estrés oxidativo autoinmune. [Rayman MP. Lancet. 2012]</li>
+                    <li><strong>Astaxantina:</strong> Protege cartílago del daño oxidativo. [Park JS, et al. Nutr Metab (Lond). 2010]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Gastroenterología</h4>
+                <p><strong>Pacientes:</strong> Colitis, síndrome de intestino irritable, hígado graso.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Inulina (800 mg), nopal (624 mg):</strong> Reducen inflamación intestinal nutriendo microbiota. [Vandeputte D, et al. Gut. 2017]</li>
+                    <li><strong>Glutatión (29 mg):</strong> Desintoxica hígado, neutralizando toxinas. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Shiitake (203 mg):</strong> Apoya función hepática con antioxidantes. [Wang L, et al. Int J Biol Macromol. 2017]</li>
+                    <li><strong>Magnesio (80 mg):</strong> Alivia espasmos digestivos relajando músculo liso. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                    <li><strong>Noni (285 mg):</strong> Combate estrés oxidativo digestivo. [Schauss AG, et al. Plant Foods Hum Nutr. 2010]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Urólogo</h4>
+                <p><strong>Pacientes:</strong> Infecciones urinarias recurrentes, cálculos renales.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (200 mg):</strong> Acidifica orina, reduciendo infecciones. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Magnesio (80 mg):</strong> Previene cálculos regulando calcio en orina. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                    <li><strong>Calcio de coral (79 mg):</strong> Mejora solubilidad mineral, previniendo litiasis. [Weaver CM, et al. Adv Nutr. 2014]</li>
+                    <li><strong>Glutatión (29 mg):</strong> Protege epitelio urinario del estrés oxidativo. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Astaxantina:</strong> Reduce inflamación pélvica. [Park JS, et al. Nutr Metab (Lond). 2010]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Oncología</h4>
+                <p><strong>Pacientes:</strong> Cáncer en tratamiento, fatiga post-quimioterapia.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Glutatión (29 mg):</strong> Protege células sanas del estrés oxidativo por quimioterapia. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Apoya regeneración tisular y defensas. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Selenio (40 µg):</strong> Mejora resiliencia celular post-tratamiento. [Rayman MP. Lancet. 2012]</li>
+                    <li><strong>Hierro bisglicinato (19 mg):</strong> Combate anemia por tratamiento. [Camaschella C. N Engl J Med. 2015]</li>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Reduce inflamación sistémica. [Calder PC. Biochem Soc Trans. 2017]</li>
+                    <li><strong>Colágeno hidrolizado (4 g):</strong> Repara tejidos afectados. [León-López A, et al. Molecules. 2019]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Psiquiatría</h4>
+                <p><strong>Pacientes:</strong> Ansiedad, depresión, insomnio.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Magnesio (80 mg):</strong> Regula GABA y serotonina, promoviendo calma. [Fathizadeh N, et al. J Caring Sci. 2010]</li>
+                    <li><strong>Vitaminas B2 (10 mg), B6 (10 mg), B12 (424 µg):</strong> Apoyan neurotransmisores, mejorando ánimo. [Pinazo-Durán MD, et al. Nutrients. 2016]</li>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Reduce inflamación cerebral, apoyando plasticidad sináptica. [Su KP, et al. Omega-3 fatty acids in major depressive disorder: a meta-analysis. J Clin Psychiatry. 2018]</li>
+                    <li><strong>Glutatión (29 mg):</strong> Protege neuronas del estrés oxidativo. [Pizzorno J. Integr Med (Encinitas). 2014]</li>
+                    <li><strong>Noni (285 mg):</strong> Combate inflamación neuronal con antioxidantes. [Schauss AG, et al. Plant Foods Hum Nutr. 2010]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Geriatría</h4>
+                <p><strong>Pacientes:</strong> Fragilidad, sarcopenia, inmunidad baja, deterioro cognitivo.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Colágeno hidrolizado (4 g):</strong> Contrarresta sarcopenia y fragilidad ósea con colágeno tipo I y II. [León-López A, et al. Molecules. 2019]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Protege tejidos y estimula colágeno, combatiendo estrés oxidativo. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Magnesio (80 mg):</strong> Reduce calambres y mejora función neuromuscular. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Reduce inflamación y apoya salud cardiovascular/cognitiva. [Yurko-Mauro K, et al. Alzheimers Dement. 2010]</li>
+                    <li><strong>Hierro bisglicinato (19 mg), B12 (424 µg):</strong> Previenen anemia y fatiga cognitiva. [Camaschella C. N Engl J Med. 2015; O'Leary F, et al. Nutrients. 2012]</li>
+                    <li><strong>Inulina (800 mg), nopal (624 mg):</strong> Refuerzan inmunidad vía microbiota. [Vandeputte D, et al. Gut. 2017]</li>
+                    <li><strong>Noni (285 mg), acai (136 mg), mangostán (136 mg):</strong> Retrasan daño oxidativo con antioxidantes exóticos. [Schauss AG, et al. Plant Foods Hum Nutr. 2010; de Moura RS, et al. J Agric Food Chem. 2012; Chen LG, et al. Food Chem Toxicol. 2011]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Enfermería</h4>
+                <p><strong>Pacientes:</strong> Encamados, postoperatorios, cuidado crónico.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Colágeno hidrolizado (4 g):</strong> Acelera cicatrización de úlceras y heridas con colágeno tipo I. [León-López A, et al. Molecules. 2019]</li>
+                    <li><strong>Vitamina C (200 mg):</strong> Potencia reparación tisular y defensas. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Magnesio (80 mg):</strong> Alivia espasmos musculares en inmovilidad. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                    <li><strong>Hierro bisglicinato (19 mg), B12 (424 µg):</strong> Combaten anemia y fatiga. [Camaschella C. N Engl J Med. 2015; O'Leary F, et al. Nutrients. 2012]</li>
+                    <li><strong>Omega-3 de krill (300 mg):</strong> Reduce inflamación crónica. [Calder PC. Biochem Soc Trans. 2017]</li>
+                    <li><strong>Inulina (800 mg), nopal (624 mg):</strong> Apoyan digestión en dietas limitadas. [Vandeputte D, et al. Gut. 2017]</li>
+                    <li><strong>Glutatión (29 mg), noni (285 mg):</strong> Combaten estrés oxidativo. [Pizzorno J. Integr Med (Encinitas). 2014; Schauss AG, et al. Plant Foods Hum Nutr. 2010]</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Combinación 2 -->
+        <div class="glosario-item">
+            <h3>Sugerencia de Nutrientes 2: Combinación Antioxidante Reforzada (6 Nutrientes en una Toma)</h3>
+            <p><strong>Ingredientes:</strong> Vitamina C (300 mg), extracto de semilla de uva (70 mg), extracto de acai (70 mg), granada liofilizada (20 mg), fresa liofilizada (20 mg), kiwi liofilizado (20 mg).</p>
+            <div class="specialty-block">
+                <h4>Endocrinología</h4>
+                <p><strong>Pacientes:</strong> Diabéticos con complicaciones oxidativas.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Reduce el daño oxidativo en vasos y nervios al neutralizar radicales libres generados por hiperglucemia crónica, mejorando la microcirculación y previniendo neuropatía. [Carr AC, et al. Vitamin C and immune function. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Con resveratrol, mejora la circulación periférica al proteger el endotelio vascular del estrés oxidativo y la inflamación, apoyando la salud microvascular. [Chiva-Blanch G, et al. Effects of wine and grape polyphenols on cardiovascular disease. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Aporta antocianinas que combaten la inflamación metabólica y el estrés oxidativo, protegiendo las células en pacientes diabéticos. [de Moura RS, et al. Acai fruit antioxidant properties. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Sus polifenoles reducen el estrés oxidativo sistémico, apoyando la función celular en condiciones metabólicas. [Sahebkar A, et al. Pomegranate and cardiovascular health. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Con vitamina C adicional y antioxidantes, protege contra el daño oxidativo vascular inducido por hiperglucemia. [Basu A, et al. Strawberries and metabolic syndrome: a review. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza la protección celular con compuestos bioactivos y vitamina E, combatiendo el estrés oxidativo metabólico. [Duttaroy AK, et al. Effects of kiwi fruit consumption on platelet aggregation and plasma antioxidants. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Cardiología</h4>
+                <p><strong>Pacientes:</strong> Hipertensos o con aterosclerosis incipiente.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Mejora la dilatación arterial al aumentar la biodisponibilidad de óxido nítrico, facilitando el flujo sanguíneo y reduciendo la presión arterial. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Sus antioxidantes protegen las arterias de la oxidación de lípidos al neutralizar radicales libres, reduciendo la formación de placas ateroscleróticas. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Combate el estrés oxidativo cardiovascular con polifenoles, apoyando la salud arterial en hipertensos. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Aporta vitamina E y compuestos bioactivos que refuerzan las membranas celulares, protegiendo contra el daño oxidativo en vasos. [Duttaroy AK, et al. Platelets. 2012]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Mejora la función endotelial con resveratrol, reduciendo el riesgo de aterosclerosis incipiente. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Sus antocianinas combaten la inflamación vascular, apoyando la salud cardiovascular. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Traumatólogo</h4>
+                <p><strong>Pacientes:</strong> Recuperación de heridas o cirugías.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Esencial para la hidroxilación de prolina y lisina en la síntesis de colágeno tipo I y II, acelerando la reparación de tejidos blandos y óseos tras lesiones o cirugías. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Reduce la inflamación local post-trauma con resveratrol, apoyando una cicatrización más rápida. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Sus antioxidantes inhiben mediadores oxidativos, promoviendo la regeneración tisular tras cirugías. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Combate el estrés oxidativo en tejidos lesionados, acelerando la recuperación. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya la reparación celular con antioxidantes, reduciendo inflamación en heridas. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza la protección antioxidante en tejidos blandos, apoyando la cicatrización. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Oftalmología</h4>
+                <p><strong>Pacientes:</strong> Cataratas o fatiga visual.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Protege el cristalino al reducir la oxidación de proteínas que causa opacidades, preservando la transparencia ocular. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Aporta antocianinas que mejoran la microcirculación retinal, aliviando fatiga visual por pantallas o luz intensa. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Sus polifenoles combaten el estrés oxidativo ocular, apoyando la salud retinal. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza la protección antioxidante en tejidos oculares con vitamina E y compuestos bioactivos. [Duttaroy AK, et al. Platelets. 2012]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Reduce inflamación ocular con resveratrol, apoyando la resiliencia visual. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Protege contra daño oxidativo en retina y cristalino con antioxidantes. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Pediatría</h4>
+                <p><strong>Pacientes:</strong> Niños con infecciones frecuentes.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Estimula la producción de glóbulos blancos y refuerza las barreras mucosas al aumentar la síntesis de interferones, mejorando la respuesta inmune innata contra resfriados o infecciones respiratorias. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya la respuesta inmune con antioxidantes, reduciendo la severidad de infecciones. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Combate el estrés oxidativo en células inmunes con vitamina E y polifenoles, apoyando la recuperación. [Duttaroy AK, et al. Platelets. 2012]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Protege contra daño oxidativo post-infeccioso con resveratrol. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Reduce inflamación con antocianinas, apoyando la inmunidad en niños. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Refuerza defensas con polifenoles antioxidantes. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Ginecología</h4>
+                <p><strong>Pacientes:</strong> Mujeres con cistitis o menopausia.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Fortalece el sistema inmune urinario al acidificar la orina, creando un ambiente hostil para bacterias como E. coli, reduciendo infecciones recurrentes. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Combate el envejecimiento celular hormonal con resveratrol, apoyando la salud de mucosas vaginales en menopausia. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Reduce inflamación pélvica y estrés oxidativo con antocianinas, mejorando la resiliencia tisular. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Protege tejidos del daño oxidativo hormonal con polifenoles. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya la salud mucosal con antioxidantes, combatiendo estrés en menopausia. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza protección celular en tejidos pélvicos con vitamina E. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Dermatólogo</h4>
+                <p><strong>Pacientes:</strong> Piel fotoenvejecida o cicatrices.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Estimula la producción de colágeno dérmico al actuar como cofactor en su síntesis, mejorando elasticidad y reduciendo líneas finas, mientras protege contra daño UV al neutralizar radicales libres. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Reduce inflamación cutánea con resveratrol, apoyando reparación tras daño solar. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Combate estrés oxidativo en piel con antocianinas, mejorando textura. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Protege contra daño celular UV con polifenoles, acelerando recuperación de cicatrices. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya regeneración cutánea con antioxidantes, reduciendo inflamación. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza barrera cutánea con vitamina E, combatiendo estrés oxidativo. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Infectología</h4>
+                <p><strong>Pacientes:</strong> Infecciones virales o recuperación inmune.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Potencia la actividad de linfocitos y neutrófilos al aumentar la producción de anticuerpos y fagocitosis, acelerando la eliminación de patógenos. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Protege células inmunes del estrés oxidativo post-infeccioso con resveratrol. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Reduce inflamación post-viral con antocianinas, apoyando recuperación. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Combate daño oxidativo con polifenoles, fortaleciendo función inmune. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya regeneración tisular con antioxidantes tras infecciones. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza defensas con vitamina E y polifenoles, acelerando recuperación. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Medicina Familiar</h4>
+                <p><strong>Pacientes:</strong> Prevención estacional o fatiga leve.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Refuerza las defensas generales al mejorar la fagocitosis y la integridad de mucosas respiratorias, protegiendo contra resfriados estacionales. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Combate daño oxidativo diario con resveratrol, apoyando vitalidad. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Reduce estrés oxidativo ambiental con antocianinas, ideal para prevención. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Protege células con polifenoles, mejorando resistencia general. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya salud celular con antioxidantes, combatiendo fatiga leve. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza protección contra estrés oxidativo con vitamina E. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Neumología</h4>
+                <p><strong>Pacientes:</strong> Infecciones respiratorias o asma alérgica.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Reduce inflamación pulmonar al neutralizar radicales libres, apoyando recuperación respiratoria. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Mejora circulación pulmonar con antocianinas, aliviando inflamación alérgica. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Combate estrés oxidativo respiratorio con polifenoles. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Reduce inflamación en vías aéreas con resveratrol. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya salud pulmonar con antioxidantes, reduciendo daño oxidativo. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza protección celular en pulmones con vitamina E. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Neurólogo</h4>
+                <p><strong>Pacientes:</strong> Estrés oxidativo cerebral o fatiga mental.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Protege neuronas al reducir daño oxidativo, apoyando función cognitiva. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Mejora flujo sanguíneo cerebral con resveratrol, combatiendo fatiga mental. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Reduce inflamación neuronal con antocianinas, mejorando claridad mental. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Combate estrés oxidativo cerebral con polifenoles. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Protege neuronas con antioxidantes, mejorando bienestar cognitivo. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza salud neuronal con vitamina E, reduciendo daño oxidativo. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Reumatólogo</h4>
+                <p><strong>Pacientes:</strong> Inflamación articular leve.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Reduce inflamación al inhibir mediadores oxidativos, apoyando tejidos conectivos. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Protege cartílago del daño oxidativo con resveratrol. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Combate estrés oxidativo articular con antocianinas. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Reduce inflamación leve con polifenoles. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya salud articular con antioxidantes. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza protección celular en articulaciones con vitamina E. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Gastroenterólogo</h4>
+                <p><strong>Pacientes:</strong> Gastritis o estrés oxidativo digestivo.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Protege mucosa gástrica al neutralizar radicales libres por H. pylori o irritantes. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Reduce inflamación digestiva con resveratrol. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Combate estrés oxidativo gástrico con antocianinas. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Protege mucosa con polifenoles antioxidantes. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya reparación celular digestiva con antioxidantes. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza salud mucosal con vitamina E. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Urólogo</h4>
+                <p><strong>Pacientes:</strong> Infecciones urinarias recurrentes.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Acidifica la orina, reduciendo crecimiento bacteriano como E. coli. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Protege epitelio urinario del estrés oxidativo con resveratrol. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Combate inflamación urinaria con antocianinas. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Reduce daño oxidativo en vías urinarias con polifenoles. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya salud mucosal urinaria con antioxidantes. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza protección celular con vitamina E. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Oncología</h4>
+                <p><strong>Pacientes:</strong> Recuperación post-tratamiento.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Protege células sanas del daño oxidativo por radiación y estimula regeneración tisular. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Reduce estrés oxidativo post-tratamiento con resveratrol. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Combate inflamación sistémica con antocianinas. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Apoya resiliencia celular con polifenoles. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Refuerza recuperación tisular con antioxidantes. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Protege contra daño oxidativo con vitamina E. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Psiquiatría</h4>
+                <p><strong>Pacientes:</strong> Ansiedad oxidativa o fatiga mental.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Reduce estrés oxidativo cerebral, apoyando función neuronal en ansiedad leve. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Mejora circulación cerebral con resveratrol, combatiendo fatiga mental. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Reduce inflamación neuronal con antocianinas, mejorando claridad mental. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Combate estrés oxidativo cerebral con polifenoles. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya bienestar cognitivo con antioxidantes. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza salud neuronal con vitamina E. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Geriatría</h4>
+                <p><strong>Pacientes:</strong> Adultos mayores con inmunidad baja, piel frágil o estrés oxidativo acumulado.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Refuerza la inmunidad al estimular linfocitos y proteger mucosas respiratorias, crucial en mayores vulnerables a infecciones. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Mejora circulación periférica y cerebral con resveratrol, apoyando salud cardiovascular y cognitiva en envejecimiento. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Combate daño oxidativo acumulado con antocianinas, retrasando deterioro celular. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Reduce estrés oxidativo sistémico con polifenoles, apoyando longevidad celular. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Protege piel y tejidos del envejecimiento con antioxidantes, mejorando elasticidad. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza protección celular con vitamina E, apoyando cicatrización en piel frágil. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <div class="specialty-block">
+                <h4>Enfermería</h4>
+                <p><strong>Pacientes:</strong> Pacientes con heridas crónicas, inmunodeprimidos o en cuidado prolongado.</p>
+                <p><strong>Beneficios:</strong></p>
+                <ul>
+                    <li><strong>Vitamina C (300 mg):</strong> Acelera cicatrización de úlceras por presión al estimular colágeno tipo I y refuerza defensas en inmunodeprimidos. [Carr AC, et al. Nutrients. 2017]</li>
+                    <li><strong>Extracto de semilla de uva (70 mg):</strong> Reduce inflamación local con resveratrol, apoyando reparación tisular. [Chiva-Blanch G, et al. Nutrients. 2013]</li>
+                    <li><strong>Extracto de acai (70 mg):</strong> Combate estrés oxidativo en heridas con antocianinas, acelerando recuperación. [de Moura RS, et al. J Agric Food Chem. 2012]</li>
+                    <li><strong>Granada liofilizada (20 mg):</strong> Protege tejidos del daño oxidativo con polifenoles, mejorando resiliencia. [Sahebkar A, et al. Pharmacol Res. 2017]</li>
+                    <li><strong>Fresa liofilizada (20 mg):</strong> Apoya regeneración celular con antioxidantes, reduciendo inflamación local. [Basu A, et al. Crit Rev Food Sci Nutr. 2014]</li>
+                    <li><strong>Kiwi liofilizado (20 mg):</strong> Refuerza protección celular con vitamina E, apoyando cicatrización en cuidados prolongados. [Duttaroy AK, et al. Platelets. 2012]</li>
+                </ul>
+            </div>
+            <p><strong>Mensaje Clave:</strong> "6 nutrientes antioxidantes en una toma – esencial para pacientes con inflamación, inmunidad baja o recuperación tisular, ideal para mayores y cuidados específicos."</p>
+        </div>
+        <div class="glosario-content" aria-live="polite">
+            <!-- Combinación 3 -->
+            <div class="glosario-item">
+                <h3>Sugerencia de Nutrientes 3: Combinación Neuromuscular y Ósea (5 Nutrientes en una Toma)</h3>
+                <p><strong>Ingredientes:</strong> Magnesio (L-treonato y glicinato, 500 mg), calcio de coral japonés (600 mg), vitamina C (300 mg), raíz de cúrcuma (230 mg), bioperina (20 mg).</p>
+                <div class="specialty-block">
+                    <h4>Endocrinología</h4>
+                    <p><strong>Pacientes:</strong> Diabéticos con neuropatía o calambres.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (L-treonato y glicinato, 500 mg):</strong> Mejora la sensibilidad a la insulina al regular enzimas glucolíticas como la glucoquinasa, ayudando a controlar la glucosa en sangre, mientras reduce calambres y espasmos musculares al relajar las fibras mediante el control de canales de calcio. [Veronese N, et al. Magnesium and health outcomes: an umbrella review. Am J Clin Nutr. 2016]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Protege los nervios periféricos del daño oxidativo inducido por hiperglucemia, apoyando la salud neurológica en pacientes diabéticos con neuropatía. [Carr AC, et al. Vitamin C and immune function. Nutrients. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Cardiología</h4>
+                    <p><strong>Pacientes:</strong> Hipertensos o con palpitaciones.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Relaja el músculo liso vascular al regular el calcio intracelular, reduciendo la resistencia periférica y la presión arterial en pacientes hipertensos. [Rosanoff A, et al. Magnesium and cardiovascular disease. Adv Nutr. 2016]</li>
+                        <li><strong>Calcio de coral japonés (600 mg):</strong> Asegura contracciones cardíacas estables sin sobrecarga al aportar calcio biodisponible. [Weaver CM, et al. Calcium bioavailability and health effects. Adv Nutr. 2014]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación vascular mediante la curcumina, inhibiendo citoquinas como TNF-α y apoyando la salud coronaria. [Sahebkar A, et al. Curcuminoids for cardiometabolic health: a review. Molecules. 2019]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Traumatólogo</h4>
+                    <p><strong>Pacientes:</strong> Dolor crónico o espasmos post-trauma.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Glicinato alivia espasmos musculares al bloquear receptores NMDA y regular el calcio, mientras L-treonato mejora la recuperación nerviosa periférica al reducir la hiperexcitabilidad. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Calcio de coral (600 mg):</strong> Fortalece el hueso al aportar minerales biodisponibles, apoyando la reparación ósea. [Weaver CM, et al. Adv Nutr. 2014]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Estimula la síntesis de colágeno tipo I, apoyando la reparación de tejidos conectivos en fracturas o cirugías. [Carr AC, et al. Nutrients. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Oftalmología</h4>
+                    <p><strong>Pacientes:</strong> Fatiga ocular o glaucoma.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> L-treonato mejora la relajación de los músculos oculares al regular el calcio, reduciendo la presión intraocular en pacientes con glaucoma o tensión ocular. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación retinal mediante la curcumina, apoyando la salud ocular. [Sahebkar A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Protege los tejidos oculares del daño oxidativo por luz UV o radicales libres. [Carr AC, et al. Nutrients. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Pediatría</h4>
+                    <p><strong>Pacientes:</strong> Niños con hiperactividad o calambres de crecimiento.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Regula la excitabilidad neuronal al actuar como antagonista del calcio, calmando el sistema nervioso central y reduciendo hiperactividad o inquietud, mientras alivia calambres asociados al crecimiento. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Calcio de coral (600 mg):</strong> Apoya el desarrollo óseo en etapas de crecimiento rápido, asegurando una estructura esquelética fuerte. [Weaver CM, et al. Adv Nutr. 2014]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Ginecología</h4>
+                    <p><strong>Pacientes:</strong> Síndrome premenstrual (SPM) o menopausia.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Reduce los dolores menstruales al relajar el músculo liso del útero mediante la modulación de calcio, aliviando calambres y tensión en el SPM. [Fathizadeh N, et al. Magnesium supplementation and premenstrual syndrome. J Caring Sci. 2010]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Disminuye la inflamación hormonal al inhibir prostaglandinas inflamatorias, apoyando el bienestar en SPM y menopausia. [Sahebkar A, et al. Molecules. 2019]</li>
+                        <li><strong>Calcio de coral (600 mg), vitamina C (300 mg):</strong> Fortalecen los huesos y la piel en mujeres menopáusicas, previniendo osteoporosis y mejorando la elasticidad cutánea. [Weaver CM, et al. Adv Nutr. 2014; Carr AC, et al. Nutrients. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Dermatólogo</h4>
+                    <p><strong>Pacientes:</strong> Piel inflamada o recuperación cutánea.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Vitamina C (300 mg):</strong> Estimula la producción de colágeno dérmico al actuar como cofactor en su síntesis, mejorando la elasticidad y apoyando la reparación de piel inflamada o dañada. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación cutánea mediante la curcumina, aliviando condiciones como dermatitis o acné inflamatorio, mientras protege contra el daño oxidativo en la dermis. [Sahebkar A, et al. Molecules. 2019]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Infectología</h4>
+                    <p><strong>Pacientes:</strong> Fatiga post-infecciosa.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Mejora la energía muscular y nerviosa al optimizar el metabolismo de ATP, combatiendo la fatiga residual tras infecciones. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Reduce el estrés oxidativo post-infeccioso al neutralizar radicales libres, apoyando la recuperación. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Disminuye la inflamación al inhibir citoquinas, facilitando la recuperación general. [Sahebkar A, et al. Molecules. 2019]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Medicina Familiar</h4>
+                    <p><strong>Pacientes:</strong> Estrés general o calambres familiares.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Combate la fatiga y la tensión muscular al regular neurotransmisores como GABA y optimizar el metabolismo celular. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Apoya la resiliencia celular y reduce el estrés oxidativo diario. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Calcio de coral (600 mg):</strong> Fortalece los huesos en todas las edades. [Weaver CM, et al. Adv Nutr. 2014]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación general al inhibir mediadores inflamatorios. [Sahebkar A, et al. Molecules. 2019]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Neumología</h4>
+                    <p><strong>Pacientes:</strong> Asma o espasmos bronquiales.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Relaja los músculos bronquiales al regular el calcio intracelular, mejorando la respiración en crisis asmáticas o broncoespasmos leves. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación pulmonar mediante la curcumina, inhibiendo citoquinas proinflamatorias. [Sahebkar A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Protege el epitelio respiratorio del daño oxidativo por alérgenos o infecciones. [Carr AC, et al. Nutrients. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Neurólogo</h4>
+                    <p><strong>Pacientes:</strong> Migrañas o insomnio.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> L-treonato reduce la hiperexcitabilidad neuronal al bloquear canales de calcio, aliviando migrañas, mientras mejora el sueño al regular GABA y melatonina. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Protege las neuronas del estrés oxidativo por radicales libres. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación cerebral asociada a dolores de cabeza crónicos. [Sahebkar A, et al. Molecules. 2019]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Reumatólogo</h4>
+                    <p><strong>Pacientes:</strong> Rigidez articular u osteoporosis.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Relaja los músculos al regular el equilibrio calcio-magnesio, mejorando la movilidad. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Calcio de coral (600 mg):</strong> Fortalece los huesos, previniendo osteoporosis. [Weaver CM, et al. Adv Nutr. 2014]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación articular mediante la curcumina, aliviando el dolor. [Sahebkar A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Estimula la síntesis de colágeno en cartílago y hueso, apoyando la salud ósea. [Carr AC, et al. Nutrients. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Gastroenterólogo</h4>
+                    <p><strong>Pacientes:</strong> Espasmos digestivos o inflamación gastrointestinal.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Alivia espasmos intestinales al relajar el músculo liso del tracto digestivo. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Protege la mucosa digestiva y reduce la inflamación al inhibir citoquinas como IL-6. [Sahebkar A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Combate el estrés oxidativo en el estómago, apoyando la recuperación. [Carr AC, et al. Nutrients. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Urólogo</h4>
+                    <p><strong>Pacientes:</strong> Cálculos renales o espasmos uretrales.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Previene la formación de cálculos de oxalato al mejorar la solubilidad de minerales en la orina y relaja los músculos uretrales. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Calcio de coral (600 mg):</strong> Mejora la solubilidad mineral, reduciendo el riesgo de litiasis. [Weaver CM, et al. Adv Nutr. 2014]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Apoya la inmunidad local en el tracto urinario, protegiendo contra infecciones. [Carr AC, et al. Nutrients. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Oncología</h4>
+                    <p><strong>Pacientes:</strong> Fatiga muscular post-tratamiento.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Mejora la función muscular al optimizar la producción de ATP, combatiendo la fatiga inducida por quimioterapia. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Protege los tejidos del estrés oxidativo secundario a tratamientos. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación post-tratamiento al inhibir citoquinas. [Sahebkar A, et al. Molecules. 2019]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Psiquiatría</h4>
+                    <p><strong>Pacientes:</strong> Ansiedad o estrés crónico.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Regula neurotransmisores como GABA y serotonina, promoviendo calma y reduciendo la ansiedad. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación cerebral asociada a la ansiedad al inhibir citoquinas proinflamatorias. [Sahebkar A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Protege las neuronas del daño oxidativo, apoyando el bienestar emocional y la claridad mental. [Carr AC, et al. Nutrients. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Geriatría</h4>
+                    <p><strong>Pacientes:</strong> Adultos mayores con osteoporosis, calambres o hipertensión leve.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Mejora la función neuromuscular al regular el calcio intracelular, reduciendo calambres y fatiga muscular, mientras apoya la relajación vascular para controlar la presión arterial. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Calcio de coral (600 mg):</strong> Fortalece los huesos debilitados por la edad al aportar minerales biodisponibles, previniendo fracturas y osteoporosis. [Weaver CM, et al. Adv Nutr. 2014]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Estimula la síntesis de colágeno tipo I, apoyando la salud de articulaciones y piel frágil. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación sistémica mediante la curcumina, aliviando dolores articulares y musculares crónicos. [Sahebkar A, et al. Molecules. 2019]</li>
+                        <li><strong>Bioperina (20 mg):</strong> Mejora la absorción de todos los nutrientes, asegurando eficacia en pacientes con metabolismo más lento. [Shoba G, et al. Influence of piperine on the pharmacokinetics of curcumin. Planta Med. 2010]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Enfermería</h4>
+                    <p><strong>Pacientes:</strong> Pacientes encamados, con espasmos musculares o en cuidado crónico.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Magnesio (500 mg):</strong> Alivia la tensión muscular y los espasmos al regular el equilibrio calcio-magnesio, mejorando la comodidad en pacientes con inmovilidad prolongada. [Rosanoff A, et al. Adv Nutr. 2016]</li>
+                        <li><strong>Calcio de coral (600 mg):</strong> Fortalece los huesos y previene la osteoporosis en pacientes con riesgo elevado por falta de movimiento. [Weaver CM, et al. Adv Nutr. 2014]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Estimula la síntesis de colágeno, acelerando la reparación de piel y tejidos en úlceras por presión o heridas. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Raíz de cúrcuma (230 mg):</strong> Reduce la inflamación asociada a condiciones crónicas al inhibir citoquinas proinflamatorias. [Sahebkar A, et al. Molecules. 2019]</li>
+                        <li><strong>Bioperina (20 mg):</strong> Optimiza la absorción, asegurando efectividad en pacientes con sistemas comprometidos. [Shoba G, et al. Planta Med. 2010]</li>
+                    </ul>
+                </div>
+                <p><strong>Mensaje Clave:</strong> "Magnesio de alta absorción + calcio – ideal para pacientes con tensión muscular, ósea o nerviosa, clave para mayores y cuidados prolongados."</p>
+            </div>
+        
+            <!-- Combinación 4 -->
+            <div class="glosario-item">
+                <h3>Sugerencia de Nutrientes 4: Combinación de Colágeno y Regeneración Tisular (7 Nutrientes en Polvo)</h3>
+                <p><strong>Ingredientes:</strong> Colágeno hidrolizado (5 g), vitamina C (300 mg), inulina de agave (1.75 g), ácido hialurónico (200 µg), liofilizado de piña (1.47 g), liofilizado de coco (1.47 g), biotina (200 µg).</p>
+                <div class="specialty-block">
+                    <h4>Endocrinología</h4>
+                    <p><strong>Pacientes:</strong> Diabéticos con piel seca o articulaciones débiles.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Mejora la hidratación y elasticidad cutánea al aumentar la densidad de fibras de colágeno en la dermis, contrarrestando la piel seca y frágil en diabéticos. [León-López A, et al. Hydrolyzed collagen—Sources and applications. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Protege los vasos pequeños del daño oxidativo al neutralizar radicales libres generados por hiperglucemia, apoyando la microcirculación en piel y articulaciones. [Carr AC, et al. Vitamin C and immune function. Nutrients. 2017]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Regula la glucemia al alimentar bacterias beneficiosas que producen ácidos grasos de cadena corta, mejorando la sensibilidad a la insulina. [Vandeputte D, et al. Inulina improves gut microbiota composition. Gut. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata tejidos internos al retener agua, aliviando la rigidez articular y la sequedad cutánea. [Oe M, et al. Oral hyaluronan relieves knee pain: a review. Nutr J. 2016]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Aportan compuestos bioactivos y antioxidantes que refuerzan la protección celular. [Hossain MA, et al. Antioxidant properties of tropical fruits. Food Res Int. 2011]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece uñas y pelo afectados por fluctuaciones metabólicas. [Patel DP, et al. A review of the use of biotin for hair loss. Skin Appendage Disord. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Cardiología</h4>
+                    <p><strong>Pacientes:</strong> Adultos mayores con rigidez vascular.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Vitamina C (300 mg):</strong> Mejora la elasticidad arterial al fortalecer el colágeno en las paredes vasculares, reduciendo la resistencia vascular. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Refuerza los tejidos conectivos circundantes a las arterias, disminuyendo la fragilidad vascular. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece uñas y piel debilitadas por estrés oxidativo cardiovascular. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata tejidos internos, apoyando la salud de los tejidos blandos. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Aportan antioxidantes que complementan la protección celular. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Traumatólogo</h4>
+                    <p><strong>Pacientes:</strong> Artrosis, tendinitis o recuperación de ligamentos.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Estimula los condrocitos para producir matriz extracelular en el cartílago, mejorando la movilidad. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Potencia la síntesis de colágeno como cofactor en la hidroxilación de prolina y lisina, acelerando la reparación de tejidos conectivos. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Lubrica articulaciones al retener agua en el líquido sinovial, reduciendo dolor y rigidez. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece tejidos blandos alrededor de las articulaciones. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Aportan enzimas y antioxidantes que reducen inflamación leve. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Oftalmología</h4>
+                    <p><strong>Pacientes:</strong> Ojos secos o córnea débil.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Fortalece la esclera y córnea al proporcionar péptidos para el colágeno tipo I. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Mejora la hidratación ocular interna al retener agua, aliviando la sequedad. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Protege las células oculares del daño oxidativo por luz UV o radicales libres. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Aportan antioxidantes que refuerzan la protección ocular. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Pediatría</h4>
+                    <p><strong>Pacientes:</strong> Adolescentes en crecimiento o con piel sensible.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Apoya el desarrollo de piel y articulaciones al promover la síntesis de colágeno tipo I. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Estimula la síntesis de colágeno, esencial durante el crecimiento rápido. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Mejora la absorción de nutrientes al nutrir la microbiota, optimizando el desarrollo óseo y articular. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata la piel sensible al retener agua. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece pelo y uñas durante cambios hormonales. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Aportan antioxidantes y mejoran la adherencia con sabor atractivo. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Ginecología</h4>
+                    <p><strong>Pacientes:</strong> Posparto o menopausia con piel flácida.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Mejora la firmeza cutánea al aumentar la producción de fibras elásticas en la dermis. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Acelera la recuperación tisular al estimular la síntesis de colágeno tipo I. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata piel seca al retener agua, aliviando la deshidratación hormonal. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece pelo y uñas debilitados por fluctuaciones hormonales. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Apoya la salud digestiva, mejorando la absorción de nutrientes. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Aportan antioxidantes que refuerzan la protección celular. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Dermatólogo</h4>
+                    <p><strong>Pacientes:</strong> Arrugas, piel deshidratada o daño solar.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Estimula la producción de colágeno dérmico, reduciendo arrugas y mejorando elasticidad. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Actúa como cofactor en la síntesis de colágeno, protegiendo contra daño UV. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata profundamente al retener agua en la dermis. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece pelo y uñas debilitados por daño ambiental. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Aportan enzimas y antioxidantes que reducen inflamación y daño oxidativo. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Infectología</h4>
+                    <p><strong>Pacientes:</strong> Recuperación tisular post-infección.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Acelera la reparación de tejidos dañados por infecciones al estimular la síntesis de colágeno tipo I. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Apoya la recuperación al estimular colágeno y neutralizar radicales libres. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Nutre la microbiota, mejorando la inmunidad post-infecciosa. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata tejidos secos, aliviando fragilidad cutánea. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Refuerza pelo y uñas debilitados por estrés sistémico. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Aportan antioxidantes para la recuperación celular. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Medicina Familiar</h4>
+                    <p><strong>Pacientes:</strong> Adultos activos o ancianos con desgaste articular.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Fortalece articulaciones y piel al estimular colágeno tipo I y II. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Mejora la movilidad y elasticidad al apoyar la síntesis de colágeno. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Mejora la salud digestiva, optimizando la absorción de nutrientes. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Lubrica articulaciones y hidrata piel. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece pelo y uñas para soporte preventivo. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Aportan antioxidantes y sabor agradable. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Neumología</h4>
+                    <p><strong>Pacientes:</strong> Recuperación pulmonar leve tras infección.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Vitamina C (300 mg):</strong> Protege el epitelio pulmonar del estrés oxidativo al neutralizar radicales libres. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Refuerza tejidos conectivos respiratorios con colágeno tipo I. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Fortalece la inmunidad general al nutrir la microbiota. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata tejidos internos. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Mejora la apariencia externa en pacientes debilitados. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Neurólogo</h4>
+                    <p><strong>Pacientes:</strong> Fatiga tisular o envejecimiento periférico.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Vitamina C (300 mg):</strong> Reduce el estrés oxidativo neuronal al neutralizar radicales libres. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Fortalece tejidos conectivos periféricos con colágeno tipo I. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata tejidos secos. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Refuerza pelo y uñas afectados por estrés o edad. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Reumatólogo</h4>
+                    <p><strong>Pacientes:</strong> Osteoartritis o fragilidad ósea.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Fortalece cartílago y hueso al estimular colágeno tipo II y I. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Apoya la síntesis de colágeno en cartílago y hueso. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Lubrica articulaciones al retener agua en el líquido sinovial. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Mejora la absorción de minerales, apoyando la densidad ósea. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece tejidos blandos como piel y uñas. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Reducen inflamación leve con antioxidantes. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Gastroenterología</h4>
+                    <p><strong>Pacientes:</strong> Salud intestinal o piel afectada por digestión.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Nutre la microbiota intestinal, mejorando la barrera mucosa y la absorción de nutrientes. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Repara tejidos conectivos digestivos y cutáneos con colágeno tipo I. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Apoya la recuperación de mucosas intestinales y piel. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata tejidos internos. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece pelo y uñas afectados por desequilibrios digestivos. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Urólogo</h4>
+                    <p><strong>Pacientes:</strong> Piel pélvica seca o recuperación tisular post-infección urinaria.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Fortalece tejidos pélvicos al mejorar la elasticidad. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata piel seca en la región pélvica. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Apoya la reparación de mucosas pélvicas al estimular colágeno. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Mejora la inmunidad en el tracto urinario al nutrir la microbiota. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Biotina (200 µg):</strong> Refuerza uñas y piel en la región pélvica. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Oncología</h4>
+                    <p><strong>Pacientes:</strong> Piel frágil post-tratamiento o recuperación estética.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Repara tejidos dañados por quimioterapia al estimular colágeno tipo I. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Mejora la elasticidad de piel frágil y neutraliza radicales libres. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata tejidos secos post-tratamiento. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece pelo y uñas debilitados por terapias agresivas. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Mejora la absorción de nutrientes para la regeneración celular. [Vandeputte D, et al. Gut. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Psiquiatría</h4>
+                    <p><strong>Pacientes:</strong> Estrés con impacto físico (piel, pelo, uñas).</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Vitamina C (300 mg):</strong> Reduce el estrés oxidativo sistémico, apoyando la salud celular. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Mejora la elasticidad cutánea afectada por estrés prolongado. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata piel seca. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece pelo y uñas, apoyando la autoestima. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Geriatría</h4>
+                    <p><strong>Pacientes:</strong> Adultos mayores con sarcopenia, piel flácida, articulaciones débiles, fragilidad general.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Contrarresta sarcopenia y fragilidad ósea al estimular colágeno tipo I y II, mejorando fuerza y movilidad. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Potencia la síntesis de colágeno y protege del estrés oxidativo. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata tejidos y lubrica articulaciones, reduciendo rigidez y sequedad. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Optimiza la absorción de nutrientes y mejora la salud digestiva. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece pelo y uñas debilitados por la edad. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Reducen inflamación leve y refuerzan la protección celular. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <div class="specialty-block">
+                    <h4>Enfermería</h4>
+                    <p><strong>Pacientes:</strong> Pacientes encamados, úlceras por presión, fragilidad cutánea, cuidado crónico.</p>
+                    <p><strong>Beneficios:</strong></p>
+                    <ul>
+                        <li><strong>Colágeno hidrolizado (5 g):</strong> Acelera la cicatrización de úlceras por presión al estimular colágeno tipo I. [León-López A, et al. Molecules. 2019]</li>
+                        <li><strong>Vitamina C (300 mg):</strong> Apoya la reparación de piel y tejidos al estimular colágeno. [Carr AC, et al. Nutrients. 2017]</li>
+                        <li><strong>Ácido hialurónico (200 µg):</strong> Hidrata tejidos secos, aliviando fragilidad cutánea. [Oe M, et al. Nutr J. 2016]</li>
+                        <li><strong>Inulina de agave (1.75 g):</strong> Nutre la microbiota, mejorando la absorción de nutrientes en dietas limitadas. [Vandeputte D, et al. Gut. 2017]</li>
+                        <li><strong>Biotina (200 µg):</strong> Fortalece pelo y uñas debilitados por inmovilidad. [Patel DP, et al. Skin Appendage Disord. 2017]</li>
+                        <li><strong>Liofilizado de piña (1.47 g), coco (1.47 g):</strong> Reducen inflamación leve y facilitan adherencia con sabor agradable. [Hossain MA, et al. Food Res Int. 2011]</li>
+                    </ul>
+                </div>
+                <p><strong>Mensaje Clave:</strong> "Colágeno Hidrolizado + vitamina C – refuerzo esencial para pacientes con desgaste articular, piel frágil o recuperación tisular, ideal para todas las edades, envejecimiento y cuidado crónico."</p>
+            </div>
+        
+            <p class="no-results">No se encontraron resultados.</p>
+        </div>
     <footer>
         <p>© 2025 Aleria. Todos los derechos reservados.</p>
     </footer>
@@ -959,10 +1937,10 @@
             let items = document.getElementsByClassName('glosario-item');
             let noResults = document.querySelector('.no-results');
             let hasResults = false;
-
+    
             for (let i = 0; i < items.length; i++) {
                 let title = items[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-                let content = items[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+                let content = items[i].innerText.toLowerCase(); // Busca en todo el contenido del item
                 
                 if (title.includes(input) || content.includes(input)) {
                     items[i].style.display = '';
@@ -971,8 +1949,13 @@
                     items[i].style.display = 'none';
                 }
             }
-
+    
             noResults.style.display = hasResults ? 'none' : 'block';
         }
-
+    
+        // Evento para el campo de entrada
         document.getElementById('searchInput').addEventListener('keyup', searchGlossary);
+    
+        // Evento para el botón "Buscar"
+        document.querySelector('.search-bar button').addEventListener('click', searchGlossary);
+    </script>
