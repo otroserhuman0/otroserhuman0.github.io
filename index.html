@@ -935,8 +935,8 @@
                 <p>Con Aleria, usted lidera el cambio hacia una salud integral eficiente y accesible, haciendo que sus tratamientos brillen y su consultorio crezca.</p>
                 <div class="button-with-icons">
                     <a href="https://wa.me/523316069351?text=Me%20llegó%20la%20publicidad%20para%20profesionales%20de%20la%20salud,%20tengo%20una%20pregunta" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>                    <div class="social-links">
-                        <a href="https://www.facebook.com/Aleria.mx/" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/aleriamx/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Aleria.mx/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/aleriamx/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -1931,31 +1931,87 @@
     </footer>
 
     <script>
-        // Search functionality for glosario
-        function searchGlossary() {
-            let input = document.getElementById('searchInput').value.toLowerCase();
-            let items = document.getElementsByClassName('glosario-item');
-            let noResults = document.querySelector('.no-results');
-            let hasResults = false;
+        document.addEventListener('DOMContentLoaded', function() {
+            function searchGlossary() {
+                let input = document.getElementById('searchInput').value.toLowerCase();
+                let items = document.getElementsByClassName('glosario-item');
+                let specialtyBlocks = document.getElementsByClassName('specialty-block');
+                let noResults = document.querySelector('.no-results');
+                let hasResults = false;
+                let firstMatch = null;
     
-            for (let i = 0; i < items.length; i++) {
-                let title = items[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-                let content = items[i].innerText.toLowerCase(); // Busca en todo el contenido del item
-                
-                if (title.includes(input) || content.includes(input)) {
+                // Primero, mostrar todos los ítems para reiniciar el filtrado
+                for (let i = 0; i < items.length; i++) {
                     items[i].style.display = '';
-                    hasResults = true;
-                } else {
-                    items[i].style.display = 'none';
+                }
+    
+                // Filtrar y buscar coincidencias en los specialty-blocks
+                for (let i = 0; i < specialtyBlocks.length; i++) {
+                    let title = specialtyBlocks[i].getElementsByTagName('h4')[0].innerText.toLowerCase();
+                    let content = specialtyBlocks[i].innerText.toLowerCase();
+                    
+                    if (title.includes(input) || content.includes(input)) {
+                        hasResults = true;
+                        specialtyBlocks[i].parentElement.style.display = ''; // Mostrar el .glosario-item padre
+                        if (!firstMatch) {
+                            firstMatch = specialtyBlocks[i]; // Guardar el primer bloque coincidente
+                        }
+                    } else {
+                        // No ocultar el .glosario-item aún, solo verificar si tiene alguna coincidencia
+                        let parentItem = specialtyBlocks[i].parentElement;
+                        let hasMatchInItem = false;
+                        let siblings = parentItem.getElementsByClassName('specialty-block');
+                        for (let j = 0; j < siblings.length; j++) {
+                            let siblingTitle = siblings[j].getElementsByTagName('h4')[0].innerText.toLowerCase();
+                            let siblingContent = siblings[j].innerText.toLowerCase();
+                            if (siblingTitle.includes(input) || siblingContent.includes(input)) {
+                                hasMatchInItem = true;
+                                break;
+                            }
+                        }
+                        if (!hasMatchInItem) {
+                            parentItem.style.display = 'none';
+                        }
+                    }
+                }
+    
+                noResults.style.display = hasResults ? 'none' : 'block';
+    
+                // Desplazarse al primer bloque coincidente
+                if (firstMatch) {
+                    firstMatch.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             }
     
-            noResults.style.display = hasResults ? 'none' : 'block';
-        }
+            // Evento para el campo de entrada (keyup)
+            document.getElementById('searchInput').addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    searchGlossary();
+                } else {
+                    // Filtrado en tiempo real sin desplazamiento
+                    let input = document.getElementById('searchInput').value.toLowerCase();
+                    let items = document.getElementsByClassName('glosario-item');
+                    let noResults = document.querySelector('.no-results');
+                    let hasResults = false;
     
-        // Evento para el campo de entrada
-        document.getElementById('searchInput').addEventListener('keyup', searchGlossary);
+                    for (let i = 0; i < items.length; i++) {
+                        let content = items[i].innerText.toLowerCase();
+                        if (content.includes(input)) {
+                            items[i].style.display = '';
+                            hasResults = true;
+                        } else {
+                            items[i].style.display = 'none';
+                        }
+                    }
     
-        // Evento para el botón "Buscar"
-        document.querySelector('.search-bar button').addEventListener('click', searchGlossary);
+                    noResults.style.display = hasResults ? 'none' : 'block';
+                }
+            });
+    
+            // Evento para el botón "Buscar" (click)
+            document.querySelector('.search-bar button').addEventListener('click', function(e) {
+                e.preventDefault();
+                searchGlossary();
+            });
+        });
     </script>
