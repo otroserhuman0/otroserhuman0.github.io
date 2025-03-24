@@ -849,6 +849,13 @@
                 padding: 8px 12px;
             }
         }
+        .highlighted {
+            background-color: var(--turquesa);
+            color: var(--blanco);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
     </style>
 </head>
 <body>
@@ -1930,88 +1937,132 @@
         <p>© 2025 Aleria. Todos los derechos reservados.</p>
     </footer>
 
+    <footer>
+        <p>© 2025 Aleria. Todos los derechos reservados.</p>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            let matches = [];
+            let currentIndex = -1;
+            let lastSearch = '';
+
+            function highlightMatches(text, query) {
+                const regex = new RegExp(`(${query})`, 'gi');
+                return text.replace(regex, '<span class="highlighted">$1</span>');
+            }
+
+            function removeHighlights(element) {
+                const spans = element.getElementsByClassName('highlighted');
+                while (spans.length > 0) {
+                    const span = spans[0];
+                    span.outerHTML = span.innerHTML;
+                }
+            }
+
             function searchGlossary() {
                 let input = document.getElementById('searchInput').value.toLowerCase();
                 let items = document.getElementsByClassName('glosario-item');
                 let specialtyBlocks = document.getElementsByClassName('specialty-block');
                 let noResults = document.querySelector('.no-results');
                 let hasResults = false;
-                let firstMatch = null;
-    
-                // Primero, mostrar todos los ítems para reiniciar el filtrado
-                for (let i = 0; i < items.length; i++) {
-                    items[i].style.display = '';
-                }
-    
-                // Filtrar y buscar coincidencias en los specialty-blocks
-                for (let i = 0; i < specialtyBlocks.length; i++) {
-                    let title = specialtyBlocks[i].getElementsByTagName('h4')[0].innerText.toLowerCase();
-                    let content = specialtyBlocks[i].innerText.toLowerCase();
-                    
-                    if (title.includes(input) || content.includes(input)) {
-                        hasResults = true;
-                        specialtyBlocks[i].parentElement.style.display = ''; // Mostrar el .glosario-item padre
-                        if (!firstMatch) {
-                            firstMatch = specialtyBlocks[i]; // Guardar el primer bloque coincidente
-                        }
-                    } else {
-                        // No ocultar el .glosario-item aún, solo verificar si tiene alguna coincidencia
-                        let parentItem = specialtyBlocks[i].parentElement;
-                        let hasMatchInItem = false;
-                        let siblings = parentItem.getElementsByClassName('specialty-block');
-                        for (let j = 0; j < siblings.length; j++) {
-                            let siblingTitle = siblings[j].getElementsByTagName('h4')[0].innerText.toLowerCase();
-                            let siblingContent = siblings[j].innerText.toLowerCase();
-                            if (siblingTitle.includes(input) || siblingContent.includes(input)) {
-                                hasMatchInItem = true;
-                                break;
+
+                if (input !== lastSearch) {
+                    matches = [];
+                    currentIndex = -1;
+                    lastSearch = input;
+
+                    for (let i = 0; i < specialtyBlocks.length; i++) {
+                        removeHighlights(specialtyBlocks[i]);
+                    }
+
+                    for (let i = 0; i < items.length; i++) {
+                        items[i].style.display = '';
+                    }
+
+                    for (let i = 0; i < specialtyBlocks.length; i++) {
+                        let titleElement = specialtyBlocks[i].getElementsByTagName('h4')[0];
+                        let title = titleElement.innerText.toLowerCase();
+                        let content = specialtyBlocks[i].innerText.toLowerCase();
+                        let originalContent = specialtyBlocks[i].innerHTML;
+
+                        if (title.includes(input) || content.includes(input)) {
+                            hasResults = true;
+                            specialtyBlocks[i].parentElement.style.display = '';
+                            matches.push(specialtyBlocks[i]);
+                            specialtyBlocks[i].innerHTML = highlightMatches(originalContent, input);
+                        } else {
+                            let parentItem = specialtyBlocks[i].parentElement;
+                            let hasMatchInItem = false;
+                            let siblings = parentItem.getElementsByClassName('specialty-block');
+                            for (let j = 0; j < siblings.length; j++) {
+                                let siblingTitle = siblings[j].getElementsByTagName('h4')[0].innerText.toLowerCase();
+                                let siblingContent = siblings[j].innerText.toLowerCase();
+                                if (siblingTitle.includes(input) || siblingContent.includes(input)) {
+                                    hasMatchInItem = true;
+                                    break;
+                                }
                             }
-                        }
-                        if (!hasMatchInItem) {
-                            parentItem.style.display = 'none';
+                            if (!hasMatchInItem) {
+                                parentItem.style.display = 'none';
+                            }
                         }
                     }
                 }
-    
+
                 noResults.style.display = hasResults ? 'none' : 'block';
-    
-                // Desplazarse al primer bloque coincidente
-                if (firstMatch) {
-                    firstMatch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                if (matches.length > 0) {
+                    currentIndex = (currentIndex + 1) % matches.length;
+                    matches[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             }
-    
-            // Evento para el campo de entrada (keyup)
+
+            function filterRealTime() {
+                let input = document.getElementById('searchInput').value.toLowerCase();
+                let items = document.getElementsByClassName('glosario-item');
+                let specialtyBlocks = document.getElementsByClassName('specialty-block');
+                let noResults = document.querySelector('.no-results');
+                let hasResults = false;
+
+                for (let i = 0; i < specialtyBlocks.length; i++) {
+                    removeHighlights(specialtyBlocks[i]);
+                    specialtyBlocks[i].innerHTML = specialtyBlocks[i].dataset.originalContent || specialtyBlocks[i].innerHTML;
+                }
+
+                for (let i = 0; i < items.length; i++) {
+                    let content = items[i].innerText.toLowerCase();
+                    if (content.includes(input)) {
+                        items[i].style.display = '';
+                        hasResults = true;
+                        let blocks = items[i].getElementsByClassName('specialty-block');
+                        for (let j = 0; j < blocks.length; j++) {
+                            let blockContent = blocks[j].innerText.toLowerCase();
+                            if (blockContent.includes(input)) {
+                                blocks[j].dataset.originalContent = blocks[j].innerHTML;
+                                blocks[j].innerHTML = highlightMatches(blocks[j].innerHTML, input);
+                            }
+                        }
+                    } else {
+                        items[i].style.display = 'none';
+                    }
+                }
+
+                noResults.style.display = hasResults ? 'none' : 'block';
+            }
+
             document.getElementById('searchInput').addEventListener('keyup', function(event) {
                 if (event.key === 'Enter') {
                     searchGlossary();
                 } else {
-                    // Filtrado en tiempo real sin desplazamiento
-                    let input = document.getElementById('searchInput').value.toLowerCase();
-                    let items = document.getElementsByClassName('glosario-item');
-                    let noResults = document.querySelector('.no-results');
-                    let hasResults = false;
-    
-                    for (let i = 0; i < items.length; i++) {
-                        let content = items[i].innerText.toLowerCase();
-                        if (content.includes(input)) {
-                            items[i].style.display = '';
-                            hasResults = true;
-                        } else {
-                            items[i].style.display = 'none';
-                        }
-                    }
-    
-                    noResults.style.display = hasResults ? 'none' : 'block';
+                    filterRealTime();
                 }
             });
-    
-            // Evento para el botón "Buscar" (click)
+
             document.querySelector('.search-bar button').addEventListener('click', function(e) {
                 e.preventDefault();
                 searchGlossary();
             });
         });
     </script>
+</body>
