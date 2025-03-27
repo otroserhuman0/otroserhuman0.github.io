@@ -681,168 +681,8 @@
             font-size: 0.9em;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-section {
-                height: auto;
-                padding: 100px 20px 40px 20px;
-            }
-
-            .hero-content {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .hero-text {
-                text-align: center;
-                margin-bottom: 20px;
-            }
-
-            .hero-text h1 {
-                font-size: 2em;
-            }
-
-            .hero-text h2 {
-                font-size: 1.2em;
-            }
-
-            .hero-image {
-                width: 100%;
-                height: auto;
-                max-width: 300px;
-            }
-
-            .content-wrapper {
-                flex-direction: column;
-                text-align: center;
-            }
-            .text-block p {
-            padding-left: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
-        }
-        .text-block p i {
-            position: static;
-            margin-right: 10px;
-        }
-        #articulo p.iconed {
-            padding-left: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
-        }
-        #articulo p i {
-            position: static;
-            margin-right: 10px;
-        }
-            .content-wrapper.reverse {
-                flex-direction: column;
-            }
-
-            #info {
-                padding-top: 100px;
-            }
-
-            section {
-                padding: 40px 20px;
-            }
-
-            #articulo h2, #glosario h2 {
-                font-size: 1.5em;
-            }
-
-            #articulo h3, #glosario h3 {
-                font-size: 1.3em;
-            }
-
-            #articulo p, #glosario p {
-                font-size: 1em;
-            }
-
-            .whatsapp-btn, .glosario-btn {
-                font-size: 1em;
-                padding: 12px 20px;
-            }
-
-            .search-bar {
-                max-width: 200px;
-            }
-
-            .search-bar input {
-                max-width: 150px;
-            }
-
-            header {
-                padding: 5px 10px;
-            }
-
-            .header-content {
-                gap: 5px;
-            }
-
-            .logo img {
-                height: 40px;
-            }
-
-            .article-image, .article-logo, .final-image {
-                float: none;
-                margin: 0 auto 20px auto;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-text h1 {
-                font-size: 1.5em;
-            }
-
-            .hero-text h2 {
-                font-size: 1em;
-            }
-
-            #articulo h2, #glosario h2 {
-                font-size: 1.2em;
-            }
-
-            #articulo h3, #glosario h3 {
-                font-size: 1.1em;
-            }
-
-            #articulo p, #glosario p {
-                font-size: 0.9em;
-            }
-
-            ul li {
-                font-size: 0.85em;
-            }
-
-            .whatsapp-btn, .glosario-btn {
-                font-size: 0.9em;
-                padding: 10px 15px;
-            }
-
-            .search-bar {
-                max-width: 150px;
-            }
-
-            .search-bar input {
-                max-width: 100px;
-            }
-
-            .logo img {
-                height: 30px;
-            }
-
-            .educational-text {
-                font-size: 0.7em;
-            }
-        }
-
-        @media (max-width: 768px) {
+       /* Responsive Design */
+@media (max-width: 768px) {
     .hero-section {
         height: auto;
         padding: 100px 20px 40px 20px;
@@ -879,36 +719,43 @@
 
     .text-block p {
         padding-left: 0;
-        text-align: center;
-    }
-
-    .text-block p .icon-text {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
+        display: block; /* Cambiamos de flex a block para un flujo natural */
+        text-align: left; /* Alineamos el texto a la izquierda */
     }
 
     .text-block p i {
-        position: static;
-        margin-right: 10px;
+        float: left; /* El ícono flota a la izquierda */
+        margin-right: 10px; /* Espacio entre el ícono y el texto */
+        margin-bottom: 5px; /* Espacio debajo del ícono para evitar superposición */
+        position: static; /* Quitamos el posicionamiento absoluto */
     }
 
     #articulo p.iconed {
         padding-left: 0;
-        text-align: center;
-    }
-
-    #articulo p.iconed .icon-text {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        display: block; /* Cambiamos a block para un flujo natural */
         text-align: left;
     }
 
     #articulo p i {
-        position: static;
-        margin-right: 10px;
+        float: left; /* El ícono flota a la izquierda */
+        margin-right: 10px; /* Espacio entre el ícono y el texto */
+        margin-bottom: 5px; /* Espacio debajo del ícono */
+        position: static; /* Quitamos el posicionamiento absoluto */
+    }
+
+    /* Aseguramos que el texto fluya correctamente después del ícono */
+    .text-block p::after,
+    #articulo p.iconed::after {
+        content: "";
+        display: block;
+        clear: both; /* Limpiamos el float para que el texto continúe debajo */
+    }
+
+    /* Ajustamos los márgenes para que el texto respete los bordes de la pantalla */
+    .text-block p,
+    #articulo p.iconed {
+        margin-left: 20px; /* Margen izquierdo para respetar el diseño */
+        margin-right: 20px; /* Margen derecho para respetar el diseño */
     }
 
     .content-wrapper.reverse {
@@ -963,6 +810,93 @@
     .article-image, .article-logo, .final-image {
         float: none;
         margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text h2 {
+        font-size: 1em;
+    }
+
+    #articulo h2, #glosario h2 {
+        font-size: 1.2em;
+    }
+
+    #articulo h3, #glosario h3 {
+        font-size: 1.1em;
+    }
+
+    #articulo p, #glosario p {
+        font-size: 0.9em;
+    }
+
+    ul li {
+        font-size: 0.85em;
+    }
+
+    .whatsapp-btn, .glosario-btn {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+
+    .search-bar {
+        max-width: 150px;
+    }
+
+    .search-bar input {
+        max-width: 100px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .educational-text {
+        font-size: 0.7em;
+    }
+
+    /* Mantenemos los mismos ajustes para pantallas más pequeñas */
+    .text-block p {
+        padding-left: 0;
+        display: block;
+        text-align: left;
+    }
+
+    .text-block p i {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        position: static;
+    }
+
+    #articulo p.iconed {
+        padding-left: 0;
+        display: block;
+        text-align: left;
+    }
+
+    #articulo p i {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        position: static;
+    }
+
+    .text-block p::after,
+    #articulo p.iconed::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .text-block p,
+    #articulo p.iconed {
+        margin-left: 15px; /* Reducimos un poco el margen para pantallas más pequeñas */
+        margin-right: 15px;
     }
 }
         .highlighted {
