@@ -813,90 +813,56 @@
     }
 }
 
+/* Contenedor para los botones en la hero section */
+.hero-buttons {
+    display: flex;
+    gap: 20px; /* Espacio entre los botones */
+    justify-content: flex-start; /* Alinea los botones a la izquierda en desktop */
+    margin-top: 20px;
+}
+
+/* Estilo del nuevo botón */
+.supplement-btn {
+    display: inline-block;
+    background-color: #e67e22; /* Color naranja para diferenciarlo */
+    color: var(--blanco);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.supplement-btn:hover {
+    background-color: #f39c12; /* Naranja más claro al hacer hover */
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajustes responsivos para los botones */
+@media (max-width: 768px) {
+    .hero-buttons {
+        flex-direction: column; /* Apila los botones en mobile */
+        align-items: center; /* Centra los botones */
+        gap: 15px;
+    }
+
+    .products-btn, .supplement-btn {
+        font-size: 1em; /* Tamaño de fuente más pequeño en mobile */
+        padding: 12px 20px;
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 300px; /* Limita el ancho máximo */
+        text-align: center;
+    }
+}
+
 @media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 1.5em;
-    }
-
-    .hero-text h2 {
-        font-size: 1em;
-    }
-
-    #articulo h2, #glosario h2 {
-        font-size: 1.2em;
-    }
-
-    #articulo h3, #glosario h3 {
-        font-size: 1.1em;
-    }
-
-    #articulo p, #glosario p {
-        font-size: 0.9em;
-    }
-
-    ul li {
-        font-size: 0.85em;
-    }
-
-    .whatsapp-btn, .glosario-btn {
+    .products-btn, .supplement-btn {
         font-size: 0.9em;
         padding: 10px 15px;
-    }
-
-    .search-bar {
-        max-width: 150px;
-    }
-
-    .search-bar input {
-        max-width: 100px;
-    }
-
-    .logo img {
-        height: 30px;
-    }
-
-    .educational-text {
-        font-size: 0.7em;
-    }
-
-    /* Mantenemos los mismos ajustes para pantallas más pequeñas */
-    .text-block p {
-        padding-left: 0;
-        display: block;
-        text-align: left;
-    }
-
-    .text-block p i {
-        float: left;
-        margin-right: 10px;
-        margin-bottom: 5px;
-        position: static;
-    }
-
-    #articulo p.iconed {
-        padding-left: 0;
-        display: block;
-        text-align: left;
-    }
-
-    #articulo p i {
-        float: left;
-        margin-right: 10px;
-        margin-bottom: 5px;
-        position: static;
-    }
-
-    .text-block p::after,
-    #articulo p.iconed::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-    .text-block p,
-    #articulo p.iconed {
-        margin-left: 15px; /* Reducimos un poco el margen para pantallas más pequeñas */
-        margin-right: 15px;
+        max-width: 250px;
     }
 }
         .highlighted {
@@ -933,7 +899,10 @@
             <div class="hero-text">
                 <h1>Suplementos Alimenticios que Entienden a su Paciente</h1>
                 <h2>Incluya el abordaje sistémico en sus tratamientos</h2>
-                <a href="#productos" class="products-btn">Conozca nuestros productos:</a>
+                <div class="hero-buttons">
+                    <a href="#productos" class="products-btn">Conozca nuestros productos:</a>
+                    <a href="#info" class="supplement-btn">¿Por qué Suplementar al paciente con Aleria?</a>
+                </div>
             </div>
             <div class="hero-image">
                 <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Profesional de la salud con bata y lentes" loading="lazy">
@@ -1013,6 +982,10 @@
             <div class="video-item">
                 <iframe src="https://www.youtube.com/embed/gh9DWW8oJSI" frameborder="0" allowfullscreen></iframe>
                 <p>Introducción Aleria</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://youtube.com/shorts/zzD98QQYKFk?feature=share" frameborder="0" allowfullscreen></iframe>
+                <p>PRO CLR+ 25 nutrientes en una toma, una bomba de antioxidantes con precisión - $1,890 pesos</p>
             </div>
             <div class="video-item">
                 <iframe src="https://www.youtube.com/embed/sEfl08P8ROk" frameborder="0" allowfullscreen></iframe>
