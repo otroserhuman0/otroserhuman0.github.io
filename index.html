@@ -842,36 +842,129 @@
             }
         }
 
-        @media (max-width: 320px) {
-            .hero-text h1 {
-                font-size: 1.2em;
-            }
+        @media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 100px 20px 40px 20px;
+    }
 
-            .hero-text h2 {
-                font-size: 0.9em;
-            }
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
 
-            #articulo h2, #glosario h2 {
-                font-size: 1em;
-            }
+    .hero-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-            #articulo h3, #glosario h3 {
-                font-size: 1em;
-            }
+    .hero-text h1 {
+        font-size: 2em;
+    }
 
-            #articulo p, #glosario p {
-                font-size: 0.85em;
-            }
+    .hero-text h2 {
+        font-size: 1.2em;
+    }
 
-            ul li {
-                font-size: 0.8em;
-            }
+    .hero-image {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
 
-            .whatsapp-btn, .glosario-btn {
-                font-size: 0.8em;
-                padding: 8px 12px;
-            }
-        }
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-block p {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .text-block p .icon-text {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .text-block p i {
+        position: static;
+        margin-right: 10px;
+    }
+
+    #articulo p.iconed {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #articulo p.iconed .icon-text {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #articulo p i {
+        position: static;
+        margin-right: 10px;
+    }
+
+    .content-wrapper.reverse {
+        flex-direction: column;
+    }
+
+    #info {
+        padding-top: 100px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    #articulo h2, #glosario h2 {
+        font-size: 1.5em;
+    }
+
+    #articulo h3, #glosario h3 {
+        font-size: 1.3em;
+    }
+
+    #articulo p, #glosario p {
+        font-size: 1em;
+    }
+
+    .whatsapp-btn, .glosario-btn {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    .search-bar {
+        max-width: 200px;
+    }
+
+    .search-bar input {
+        max-width: 150px;
+    }
+
+    header {
+        padding: 5px 10px;
+    }
+
+    .header-content {
+        gap: 5px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .article-image, .article-logo, .final-image {
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+}
         .highlighted {
             background-color: var(--turquesa);
             color: var(--blanco);
@@ -917,7 +1010,7 @@
     <section id="info">
         <div class="content-wrapper">
             <div class="text-block">
-                <p><i class="fas fa-sun"></i>Usted lo ve todos los días en su consultorio: pacientes agotados, con dolores articulares persistentes, piel opaca, defensas bajas o una energía que no da más. Estos síntomas frustran a sus pacientes y dificultan que sigan sus tratamientos, afectando los resultados que usted busca.</p>
+                <p><span class="icon-text"><i class="fas fa-sun"></i>Usted lo ve todos los días en su consultorio: </span>pacientes agotados, con dolores articulares persistentes, piel opaca, defensas bajas o una energía que no da más. Estos síntomas frustran a sus pacientes y dificultan que sigan sus tratamientos, afectando los resultados que usted busca.</p>
                 <p>Esto ocurre por un desgaste metabólico conocido como <span class="highlight">estrés oxidativo</span>, un proceso que el estilo de vida actual —lleno de prisas, dietas pobres y tensiones— acelera silenciosamente.</p>
             </div>
             <div class="video-block">
@@ -929,7 +1022,7 @@
         </div>
         <div class="content-wrapper reverse">
             <div class="text-block">
-                <p><i class="fas fa-leaf"></i>Aleria le ofrece una solución única: suplementos diseñados con precisión científica para optimizar los mecanismos regenerativos, metabólicos y de equilibrio del cuerpo, usando dosis exactas que maximizan absorción y potencian la efectividad de sus prescripciones, llevando sus tratamientos a un nivel superior.</p>
+                <p><span class="icon-text"><i class="fas fa-leaf"></i>Aleria le ofrece una solución única: </span>suplementos diseñados con precisión científica para optimizar los mecanismos regenerativos, metabólicos y de equilibrio del cuerpo, usando dosis exactas que maximizan absorción y potencian la efectividad de sus prescripciones, llevando sus tratamientos a un nivel superior.</p>
                 <p><strong>¿Listo para que sus pacientes cumplan más y sus resultados hablen por usted?</strong></p>
                 <div class="button-with-icons">
                     <a href="https://wa.me/523316069351?text=Me%20llegó%20la%20publicidad%20para%20profesionales%20de%20la%20salud,%20tengo%20una%20pregunta" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>
@@ -946,7 +1039,7 @@
                 <p>Dra. Nora Gil: "Mejor control de hemoglobina glicosilada."</p>
             </div>
         </div>
-        <p><i class="fas fa-heart"></i>Aleria no solo alivia los síntomas que ve en consulta —cansancio, molestias, fragilidad—, sino que mejora la adherencia al optimizar cómo el cuerpo responde a sus tratamientos, desde la absorción de medicamentos hasta la vitalidad general.</p>
+        <p><span class="icon-text"><i class="fas fa-heart"></i>Aleria no solo alivia los síntomas </span>que ve en consulta —cansancio, molestias, fragilidad—, sino que mejora la adherencia al optimizar cómo el cuerpo responde a sus tratamientos, desde la absorción de medicamentos hasta la vitalidad general.</p>
         <div class="content-wrapper">
             <div class="text-block">
                 <p>Para respaldarlo, le ofrecemos un <a href="#glosario" class="glosario-link">Glosario médico para suplementación de pacientes</a>, con datos claros por especialidad sobre cómo los nutrientes coadyuvan en las terapias, desde endocrinología y ginecología hasta cardiología y reumatología, con evidencia aplicable.</p>
@@ -964,9 +1057,10 @@
                 <p>Si ya trabaja con otras marcas de suplementos, Aleria le invita a conocer el efecto de la precisión en cuanto a cantidades y combinaciones de nutrientes para acelerar la respuesta del paciente y reducir su inversión en distintos productos.</p>
                 <p>Con Aleria, usted lidera el cambio hacia una salud integral eficiente y accesible, haciendo que sus tratamientos brillen y su consultorio crezca.</p>
                 <div class="button-with-icons">
-                    <a href="https://wa.me/523316069351?text=Me%20llegó%20la%20publicidad%20para%20profesionales%20de%20la%20salud,%20tengo%20una%20pregunta" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>                    <div class="social-links">
-                        <a href="https://www.facebook.com/Aleria.mx/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/aleriamx/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/523316069351?text=Me%20llegó%20la%20publicidad%20para%20profesionales%20de%20la%20salud,%20tengo%20una%20pregunta" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Aleria.mx/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/aleriamx/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -1005,29 +1099,30 @@
         </div>
     </section>
 
-    <section id="articulo">
-        <h2>El Rol de la Suplementación en el Proceso Terapéutico del Paciente: Combatiendo el Estrés Oxidativo y la Inflamación para el Éxito Clínico y Profesional</h2>
-        <h3><i class="fas fa-shield-alt"></i> Combatiendo el Estrés Oxidativo y la Inflamación</h3>
-        <img src="https://i.ibb.co/d3DDnw8/sangreviva-cc.png" alt="Efecto antioxidante en sangre viva" class="article-image" loading="lazy">
-        <p class="image-caption">Efecto antioxidante en sangre viva.</p>
-        <p class="iconed"><i class="fas fa-shield-virus"></i>En el contexto actual de la atención médica, la suplementación alimenticia se ha posicionado como un elemento crucial en el manejo integral de los pacientes, potenciando los tratamientos convencionales y mejorando los resultados terapéuticos. El estilo de vida moderno —caracterizado por dietas desbalanceadas, sedentarismo, estrés crónico y exposición a contaminantes— genera un impacto significativo en la salud a través del estrés oxidativo y la inflamación sistémica. Estos procesos, desencadenados por la acumulación de radicales libres y la activación persistente de citoquinas proinflamatorias, desgastan los tejidos, debilitan el sistema inmune y agravan condiciones como enfermedades metabólicas, articulares o cardiovasculares. La suplementación, al aportar nutrientes específicos como antioxidantes, vitaminas y compuestos bioactivos, actúa como un escudo protector que contrarresta estos efectos, apoyando la regeneración celular y reduciendo la carga inflamatoria, lo que no solo mejora la salud física, sino que también fortalece el bienestar emocional del paciente al ofrecerle resultados visibles y un rol activo en su cuidado.</p>
-        <img src="https://i.ibb.co/PsyRqsV8/sangreviva-co.png" alt="Efecto antiinflamatorio y depurativo en sangre viva" class="article-image" loading="lazy">
-        <p class="image-caption">Efecto antiinflamatorio y depurativo en sangre viva.</p>
-        <p>El estrés oxidativo y la inflamación crónica derivados del estilo de vida presentan un desafío directo para el apego al tratamiento, especialmente en pacientes con condiciones prolongadas o necesidades continuas. La fatiga, el dolor articular, la piel opaca o la baja energía —síntomas comunes de estos procesos— pueden desmotivar a los pacientes, llevándolos a percibir el tratamiento como una carga más en su rutina ya exigente, lo que disminuye la adherencia y compromete el éxito terapéutico. Aquí es donde la suplementación se convierte en un aliado estratégico: al mitigar el estrés oxidativo con antioxidantes y reducir la inflamación con nutrientes específicos, los pacientes experimentan mejoras tangibles —más energía, menos molestias, mejor apariencia—, lo que transforma el cumplimiento en una experiencia positiva y sostenible. Este alivio palpable no solo refuerza su compromiso con las indicaciones médicas, sino que también les da una sensación de progreso y control, elevando las tasas de éxito clínico y fortaleciendo la confianza en el profesional de la salud.</p>
-        <h3><i class="fas fa-heart"></i> Beneficios Clínicos y Profesionales</h3>
-        <img src="https://i.ibb.co/yc4nx7Dw/sangreseca.png" alt="Efecto antioxidante en sangre seca" class="article-image" loading="lazy">
-        <p class="image-caption">Efecto antioxidante en sangre seca.</p>
-        <p class="iconed"><i class="fas fa-stethoscope"></i>Para el médico, integrar la suplementación en su práctica trasciende la mejora clínica: es una oportunidad para amplificar su impacto profesional y económico. Al abordar el estrés oxidativo y la inflamación que el estilo de vida impone a los pacientes, los doctores ofrecen soluciones integrales que generan resultados notables, lo que no solo fideliza a los pacientes actuales, sino que los convierte en promotores naturales del profesional. Pacientes satisfechos con su mejoría —ya sea en movilidad, vitalidad o apariencia— recomiendan al médico a su círculo cercano, aumentando la base de consultas y consolidando su prestigio como un experto en bienestar integral. Además, el modelo de negocio de Aleria, con un 10% de descuento para el paciente y un 10% de comisión para el doctor por cada compra en la web, agrega un flujo de ingresos complementario. Este sistema permite al médico beneficiarse económicamente del uso continuo de los suplementos por parte de sus pacientes, sin alterar la dinámica de las consultas regulares, sino potenciándola: los pacientes regresan para ajustar su plan, explorar nuevas opciones o simplemente mantener una relación de confianza, mientras el doctor disfruta de una ganancia pasiva que refleja el éxito de su enfoque terapéutico.</p>
-        <p>En síntesis, la suplementación es mucho más que un apoyo nutricional; es una herramienta poderosa para contrarrestar el estrés oxidativo y la inflamación que el estilo de vida moderno impone a los pacientes, mejorando su apego y el éxito terapéutico al ofrecer resultados que los motivan a seguir adelante. Para el médico, representa una vía para elevar la calidad de su práctica, atraer más pacientes mediante recomendaciones y generar ingresos adicionales, todo mientras fortalece su rol como guía en el camino hacia la salud integral. Es una estrategia que beneficia a todos: el paciente gana bienestar, y el doctor consolida su impacto clínico y profesional en un modelo sostenible y exitoso.</p>
-        <h3><i class="fas fa-leaf"></i> ¿Por Qué Asociarse con Aleria? Un Enfoque Único para Estimular la Autoregeneración, el Metabolismo y la Homeostasis</h3>
-        <img src="logo-aleria.png" alt="Aleria Logo" class="article-logo" loading="lazy">
-        <p class="iconed"><i class="fas fa-seedling"></i>En un mercado donde abundan las opciones de suplementos, Aleria se posiciona como un socio excepcional para los profesionales de la salud que buscan soluciones efectivas y alineadas con la biología humana. A diferencia de muchas marcas que saturan sus porciones con cantidades excesivas de ingredientes, Aleria se distingue por su enfoque único: entender las necesidades reales del cuerpo y combinar nutrientes en la cantidad justa para estimular los mecanismos autoregenerativos, metabólicos y homeostáticos de manera óptima. Asociarse con Aleria es apostar por una estrategia que maximiza la absorción con la menor cantidad posible, potenciando los procesos naturales del organismo en lugar de sobrecargarlo, ofreciendo un contraste claro con el enfoque de la medicina alopática tradicional.</p>
-        <p>Mientras otras marcas apuestan por dosis desproporcionadas que el cuerpo no siempre puede aprovechar, Aleria prioriza la autoregeneración con un diseño preciso. Sus formulaciones están pensadas para activar los procesos innatos de reparación del organismo, apoyando la renovación de tejidos sin exceder lo que el cuerpo necesita. Esta precisión asegura que cada nutriente se utilice eficientemente, estimulando las capacidades celulares para sanarse a sí mismas, en lugar de saturar al sistema con cantidades innecesarias que a menudo se desperdician. El resultado es una recuperación natural y sostenible que los pacientes perciben en su bienestar, fortaleciendo su compromiso con el cuidado recomendado por el médico.</p>
-        <p>En el ámbito metabólico, Aleria marca la diferencia al ofrecer combinaciones que potencian los procesos energéticos sin abrumar al organismo. A diferencia de enfoques que sobrecargan con cantidades excesivas, Aleria equilibra sus nutrientes para optimizar la absorción y utilización de energía, apoyando al cuerpo en su capacidad de regularse a sí mismo. Este enfoque respeta los límites del metabolismo, estimulando su eficiencia con la menor intervención posible, lo que permite a los pacientes recuperar vitalidad de forma natural, en contraste con soluciones que buscan imponer resultados forzados. Es una respuesta directa a las demandas del estilo de vida moderno, donde el desgaste metabólico requiere apoyo sutil pero efectivo.</p>
-        <p>La homeostasis, ese equilibrio esencial para la salud, es otro pilar donde Aleria sobresale. Mientras otras marcas pueden desestabilizar al organismo con dosis desmedidas, Aleria utiliza cantidades cuidadosamente calibradas para fortalecer los sistemas que mantienen la armonía interna. Este enfoque estimula la respuesta natural del cuerpo frente al estrés oxidativo y la inflamación, promoviendo un estado de estabilidad sin recurrir a la saturación típica de la medicina alopática, cuyo objetivo suele ser suprimir síntomas en lugar de activar procesos. Con Aleria, el cuerpo encuentra su propio camino hacia el equilibrio, apoyado por nutrientes que trabajan en sinergia para maximizar su capacidad homeostática.</p>
-        <p>Asociarse con Aleria es elegir una marca que entiende que menos puede ser más. Su filosofía se basa en la ciencia de la precisión: combinar nutrientes en dosis justas para maximizar la absorción y estimular los procesos naturales del cuerpo, en lugar de abrumarlo con excesos. Esto no solo mejora el apego al tratamiento al ofrecer resultados auténticos y sostenibles que los pacientes valoran, sino que también posiciona al médico como un líder en soluciones inteligentes y efectivas. Además, el modelo de colaboración de Aleria —con descuentos para pacientes y comisiones para profesionales— añade un beneficio económico tangible, permitiendo al médico crecer profesionalmente mientras sus pacientes prosperan con un enfoque que respeta y potencia su biología. Es una alianza que redefine el cuidado, priorizando el estímulo natural sobre la intervención forzada, con calidad certificada y resultados que hablan por sí mismos.</p>
-        <a href="https://wa.me/523316069351?text=Me%20llegó%20la%20publicidad%20para%20profesionales%20de%20la%20salud,%20tengo%20una%20pregunta" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>        <img src="https://i.ibb.co/PGR8nSND/Banner-oxidim.png" alt="Oxidim" class="final-image" loading="lazy">
-    </section>
+   <section id="articulo">
+    <h2>El Rol de la Suplementación en el Proceso Terapéutico del Paciente: Combatiendo el Estrés Oxidativo y la Inflamación para el Éxito Clínico y Profesional</h2>
+    <h3><i class="fas fa-shield-alt"></i> Combatiendo el Estrés Oxidativo y la Inflamación</h3>
+    <img src="https://i.ibb.co/d3DDnw8/sangreviva-cc.png" alt="Efecto antioxidante en sangre viva" class="article-image" loading="lazy">
+    <p class="image-caption">Efecto antioxidante en sangre viva.</p>
+    <p class="iconed"><span class="icon-text"><i class="fas fa-shield-virus"></i>En el contexto actual de la atención médica, </span>la suplementación alimenticia se ha posicionado como un elemento crucial en el manejo integral de los pacientes, potenciando los tratamientos convencionales y mejorando los resultados terapéuticos. El estilo de vida moderno —caracterizado por dietas desbalanceadas, sedentarismo, estrés crónico y exposición a contaminantes— genera un impacto significativo en la salud a través del estrés oxidativo y la inflamación sistémica. Estos procesos, desencadenados por la acumulación de radicales libres y la activación persistente de citoquinas proinflamatorias, desgastan los tejidos, debilitan el sistema inmune y agravan condiciones como enfermedades metabólicas, articulares o cardiovasculares. La suplementación, al aportar nutrientes específicos como antioxidantes, vitaminas y compuestos bioactivos, actúa como un escudo protector que contrarresta estos efectos, apoyando la regeneración celular y reduciendo la carga inflamatoria, lo que no solo mejora la salud física, sino que también fortalece el bienestar emocional del paciente al ofrecerle resultados visibles y un rol activo en su cuidado.</p>
+    <img src="https://i.ibb.co/PsyRqsV8/sangreviva-co.png" alt="Efecto antiinflamatorio y depurativo en sangre viva" class="article-image" loading="lazy">
+    <p class="image-caption">Efecto antiinflamatorio y depurativo en sangre viva.</p>
+    <p>El estrés oxidativo y la inflamación crónica derivados del estilo de vida presentan un desafío directo para el apego al tratamiento, especialmente en pacientes con condiciones prolongadas o necesidades continuas. La fatiga, el dolor articular, la piel opaca o la baja energía —síntomas comunes de estos procesos— pueden desmotivar a los pacientes, llevándolos a percibir el tratamiento como una carga más en su rutina ya exigente, lo que disminuye la adherencia y compromete el éxito terapéutico. Aquí es donde la suplementación se convierte en un aliado estratégico: al mitigar el estrés oxidativo con antioxidantes y reducir la inflamación con nutrientes específicos, los pacientes experimentan mejoras tangibles —más energía, menos molestias, mejor apariencia—, lo que transforma el cumplimiento en una experiencia positiva y sostenible. Este alivio palpable no solo refuerza su compromiso con las indicaciones médicas, sino que también les da una sensación de progreso y control, elevando las tasas de éxito clínico y fortaleciendo la confianza en el profesional de la salud.</p>
+    <h3><i class="fas fa-heart"></i> Beneficios Clínicos y Profesionales</h3>
+    <img src="https://i.ibb.co/yc4nx7Dw/sangreseca.png" alt="Efecto antioxidante en sangre seca" class="article-image" loading="lazy">
+    <p class="image-caption">Efecto antioxidante en sangre seca.</p>
+    <p class="iconed"><span class="icon-text"><i class="fas fa-stethoscope"></i>Para el médico, integrar la suplementación </span>en su práctica trasciende la mejora clínica: es una oportunidad para amplificar su impacto profesional y económico. Al abordar el estrés oxidativo y la inflamación que el estilo de vida impone a los pacientes, los doctores ofrecen soluciones integrales que generan resultados notables, lo que no solo fideliza a los pacientes actuales, sino que los convierte en promotores naturales del profesional. Pacientes satisfechos con su mejoría —ya sea en movilidad, vitalidad o apariencia— recomiendan al médico a su círculo cercano, aumentando la base de consultas y consolidando su prestigio como un experto en bienestar integral. Además, el modelo de negocio de Aleria, con un 10% de descuento para el paciente y un 10% de comisión para el doctor por cada compra en la web, agrega un flujo de ingresos complementario. Este sistema permite al médico beneficiarse económicamente del uso continuo de los suplementos por parte de sus pacientes, sin alterar la dinámica de las consultas regulares, sino potenciándola: los pacientes regresan para ajustar su plan, explorar nuevas opciones o simplemente mantener una relación de confianza, mientras el doctor disfruta de una ganancia pasiva que refleja el éxito de su enfoque terapéutico.</p>
+    <p>En síntesis, la suplementación es mucho más que un apoyo nutricional; es una herramienta poderosa para contrarrestar el estrés oxidativo y la inflamación que el estilo de vida moderno impone a los pacientes, mejorando su apego y el éxito terapéutico al ofrecer resultados que los motivan a seguir adelante. Para el médico, representa una vía para elevar la calidad de su práctica, atraer más pacientes mediante recomendaciones y generar ingresos adicionales, todo mientras fortalece su rol como guía en el camino hacia la salud integral. Es una estrategia que beneficia a todos: el paciente gana bienestar, y el doctor consolida su impacto clínico y profesional en un modelo sostenible y exitoso.</p>
+    <h3><i class="fas fa-leaf"></i> ¿Por Qué Asociarse con Aleria? Un Enfoque Único para Estimular la Autoregeneración, el Metabolismo y la Homeostasis</h3>
+    <img src="logo-aleria.png" alt="Aleria Logo" class="article-logo" loading="lazy">
+    <p class="iconed"><span class="icon-text"><i class="fas fa-seedling"></i>En un mercado donde abundan las opciones </span>de suplementos, Aleria se posiciona como un socio excepcional para los profesionales de la salud que buscan soluciones efectivas y alineadas con la biología humana. A diferencia de muchas marcas que saturan sus porciones con cantidades excesivas de ingredientes, Aleria se distingue por su enfoque único: entender las necesidades reales del cuerpo y combinar nutrientes en la cantidad justa para estimular los mecanismos autoregenerativos, metabólicos y homeostáticos de manera óptima. Asociarse con Aleria es apostar por una estrategia que maximiza la absorción con la menor cantidad posible, potenciando los procesos naturales del organismo en lugar de sobrecargarlo, ofreciendo un contraste claro con el enfoque de la medicina alopática tradicional.</p>
+    <p>Mientras otras marcas apuestan por dosis desproporcionadas que el cuerpo no siempre puede aprovechar, Aleria prioriza la autoregeneración con un diseño preciso. Sus formulaciones están pensadas para activar los procesos innatos de reparación del organismo, apoyando la renovación de tejidos sin exceder lo que el cuerpo necesita. Esta precisión asegura que cada nutriente se utilice eficientemente, estimulando las capacidades celulares para sanarse a sí mismas, en lugar de saturar al sistema con cantidades innecesarias que a menudo se desperdician. El resultado es una recuperación natural y sostenible que los pacientes perciben en su bienestar, fortaleciendo su compromiso con el cuidado recomendado por el médico.</p>
+    <p>En el ámbito metabólico, Aleria marca la diferencia al ofrecer combinaciones que potencian los procesos energéticos sin abrumar al organismo. A diferencia de enfoques que sobrecargan con cantidades excesivas, Aleria equilibra sus nutrientes para optimizar la absorción y utilización de energía, apoyando al cuerpo en su capacidad de regularse a sí mismo. Este enfoque respeta los límites del metabolismo, estimulando su eficiencia con la menor intervención posible, lo que permite a los pacientes recuperar vitalidad de forma natural, en contraste con soluciones que buscan imponer resultados forzados. Es una respuesta directa a las demandas del estilo de vida moderno, donde el desgaste metabólico requiere apoyo sutil pero efectivo.</p>
+    <p>La homeostasis, ese equilibrio esencial para la salud, es otro pilar donde Aleria sobresale. Mientras otras marcas pueden desestabilizar al organismo con dosis desmedidas, Aleria utiliza cantidades cuidadosamente calibradas para fortalecer los sistemas que mantienen la armonía interna. Este enfoque estimula la respuesta natural del cuerpo frente al estrés oxidativo y la inflamación, promoviendo un estado de estabilidad sin recurrir a la saturación típica de la medicina alopática, cuyo objetivo suele ser suprimir síntomas en lugar de activar procesos. Con Aleria, el cuerpo encuentra su propio camino hacia el equilibrio, apoyado por nutrientes que trabajan en sinergia para maximizar su capacidad homeostática.</p>
+    <p>Asociarse con Aleria es elegir una marca que entiende que menos puede ser más. Su filosofía se basa en la ciencia de la precisión: combinar nutrientes en dosis justas para maximizar la absorción y estimular los procesos naturales del cuerpo, en lugar de abrumarlo con excesos. Esto no solo mejora el apego al tratamiento al ofrecer resultados auténticos y sostenibles que los pacientes valoran, sino que también posiciona al médico como un líder en soluciones inteligentes y efectivas. Además, el modelo de colaboración de Aleria —con descuentos para pacientes y comisiones para profesionales— añade un beneficio económico tangible, permitiendo al médico crecer profesionalmente mientras sus pacientes prosperan con un enfoque que respeta y potencia su biología. Es una alianza que redefine el cuidado, priorizando el estímulo natural sobre la intervención forzada, con calidad certificada y resultados que hablan por sí mismos.</p>
+    <a href="https://wa.me/523316069351?text=Me%20llegó%20la%20publicidad%20para%20profesionales%20de%20la%20salud,%20tengo%20una%20pregunta" class="whatsapp-btn" target="_blank">Hablemos por WhatsApp</a>
+    <img src="https://i.ibb.co/PGR8nSND/Banner-oxidim.png" alt="Oxidim" class="final-image" loading="lazy">
+</section>
 
     <section id="glosario">
         <h2>Glosario Médico para Suplementación</h2>
